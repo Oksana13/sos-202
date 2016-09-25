@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" ng-app="sos" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html lang="ru" ng-app="sos" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html lang="ru" ng-app="sos" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ru" ng-app="sos" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SOS!202</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="source/main.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <main>
+    <div class="main-container">
+      <div class="home-btn hidden"><img src="source/img/elements/home.png" alt=""></div>
+      <div class="main-screen">
+        <div class="left-block">
+          <a href="#!/quiz" class="btn">- Квест</a>
+          <a href="#!/remainders" class="btn">- Памятки</a>
+          <a href="#!/contacts" class="btn">- Контакты</a>
+        </div>
+        <div class="right-block">
+          <div class="help-btn about-btn"><img src="source/img/elements/reference.png" alt=""></div>
+          <div class="help-btn broshure"><img src="source/img/elements/reference.png" alt=""></div>
+        </div>
+
+        <div class="help-block hidden">
+          <div class="help-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit expedita aliquam molestiae delectus unde iure odio inventore, nisi porro, sed impedit minima rerum quaerat nemo architecto cumque magni, obcaecati eveniet.</p>
+          </div>
+          <div class="close-btn"></div>
+        </div>
+      </div>
+
+      <div class="contacts-screen hidden">
+        <div class="left-block">
+          <ol class="contacts-list">
+            <li>Контакт</li>
+            <li>Контакт</li>
+            <li>Контакт</li>
+          </ol>
+        </div>
+      </div>
+
+
+      <div class="memo-screen">
+        <div class="left-block">
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!--
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="script/app.js"></script>
+  <script src="script/remainders.controller.js"></script>
+  <script src="script/contacts.controller.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
+

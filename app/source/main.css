@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'B52';
+  src: url('fonts/B52.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+p,
+span,
+ul,
+ol {
+  font-family: 'Cambria';
+  font-size: 20px;
+}
+.hidden {
+  display: none;
+}
+main {
+  width: 100%;
+  min-height: 768px;
+  height: 100%;
+  background: url(img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+.main-container {
+  width: 847px;
+  height: 653px;
+  background: url(img/bg-start-page.png);
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  margin: auto;
+  position: relative;
+}
+.main-container .home-btn {
+  width: 101px;
+  height: 101px;
+  position: absolute;
+  cursor: pointer;
+  top: 115px;
+  left: -68px;
+}
+.main-container .home-btn:hover {
+  background: url(img/elements/home-hover.png);
+}
+.main-container .left-block {
+  position: absolute;
+  top: 160px;
+  left: 50px;
+}
+.main-container .right-block {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+}
+.main-screen .left-block .btn {
+  width: 195px;
+  display: block;
+  text-align: left;
+  font-family: 'B52';
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  margin: 40px 0;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: .5s;
+}
+.main-screen .left-block .btn:hover {
+  background: url(img/elements/btn-hover.png);
+  transition: .5s;
+}
+.main-screen .left-block .btn:active {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+.main-screen .right-block .help-btn {
+  width: 54px;
+  height: 56px;
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.main-screen .right-block .help-btn:hover {
+  background: url(img/elements/reference-hover.png);
+  transition: .5s;
+}
+.main-screen .right-block .help-btn.about-btn {
+  right: 125px;
+  top: 35px;
+}
+.main-screen .right-block .help-btn.broshure {
+  right: 240px;
+  top: 315px;
+}
+.main-screen .help-block {
+  width: 463px;
+  height: 643px;
+  position: absolute;
+  background: url(img/contacts-el/reference-block-bg.png);
+  padding: 50px 60px 100px 50px;
+  box-sizing: border-box;
+}
+.main-screen .close-btn {
+  width: 39px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  background: url(img/elements/close-btn.png);
+  bottom: 35px;
+  left: 25px;
+}

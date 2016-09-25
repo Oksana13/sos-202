@@ -1,0 +1,75 @@
+.main-screen {
+  .left-block {
+    .btn {
+      width: 195px;
+      display: block;
+      text-align: left;
+      font-family: 'B52';
+      text-decoration: none;
+      color: #000;
+      font-size: 25px;
+      margin: 40px 0;
+      padding-left: 15px;
+      cursor: pointer;
+      transition: .5s;
+
+      &:hover {
+        background: url(img/elements/btn-hover.png);
+        transition: .5s;
+      }
+      &:active {
+        box-shadow: 5px 5px 5px rgba(0,0,0,.75);
+      }
+    }
+  }
+
+  .right-block {
+    .help-btn {
+      width: 54px;
+      height: 56px;
+      position: absolute;
+      box-sizing: border-box;
+      padding-top: 4px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background: url(img/elements/reference-hover.png);
+        transition: .5s;
+      }
+
+      &.about-btn {
+        right: 125px;
+        top: 35px;
+      }
+
+      &.broshure {
+        right: 240px;
+        top: 315px;
+      }
+    }
+  }
+
+  .help-block {
+    width: 463px;
+    height: 643px;
+    position: absolute;
+    background: url(img/contacts-el/reference-block-bg.png);
+    padding: 50px 60px 100px 50px;
+    box-sizing: border-box;
+
+    .help-content {
+
+    }
+  }
+
+  .close-btn {
+    width: 39px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    background: url(img/elements/close-btn.png);
+    bottom: 35px;
+    left: 25px;
+  }
+}

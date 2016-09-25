@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'B52';
+	src: url('fonts/B52.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;				
+}
+
+p, span, ul, ol {
+	font-family: 'Cambria';
+	font-size: 20px;
+
+}
+
+.hidden {
+	display: none;
+}
+
+main {
+	width: 100%;
+	min-height: 768px;
+	height: 100%;
+	background: url(img/bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 60px;
+  	box-sizing: border-box;
+}
+
+.main-container {
+	width: 847px;
+	height: 653px;
+	background: url(img/bg-start-page.png);
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	margin: auto;
+	position: relative;
+
+	.home-btn {
+		width: 101px;
+		height: 101px;
+		position: absolute;
+    	cursor: pointer;
+		top: 115px;
+    	left: -68px;
+
+    &:hover {
+    	background: url(img/elements/home-hover.png);
+    	}
+	}
+
+	.left-block {
+		position: absolute;
+		top: 160px;
+		left: 50px;
+  }
+
+  .right-block {
+		position: absolute;
+		top: 160px;
+		right: 50px;
+  }
+}
+
