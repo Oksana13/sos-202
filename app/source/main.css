@@ -13,7 +13,7 @@ p,
 span,
 ul,
 ol {
-  font-family: 'Cambria';
+  font-family: Cambria, Georgia, serif;
   font-size: 20px;
 }
 .hidden {
@@ -60,9 +60,10 @@ main {
 }
 .main-screen .left-block .btn {
   width: 195px;
+  min-height: 52px;
   display: block;
   text-align: left;
-  font-family: 'B52';
+  font-family: B52, Georgia, serif;
   text-decoration: none;
   color: #000;
   font-size: 25px;
@@ -74,9 +75,6 @@ main {
 .main-screen .left-block .btn:hover {
   background: url(img/elements/btn-hover.png);
   transition: .5s;
-}
-.main-screen .left-block .btn:active {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 .main-screen .right-block .help-btn {
   width: 54px;
