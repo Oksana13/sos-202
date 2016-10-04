@@ -9,6 +9,13 @@ angular.module('sos', ['ngRoute', 'sos.remainders', 'sos.contacts'])
         }
     ])
 
+    .directive('firstscreen', function () {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/firstscreen.html'
+        }
+    })
+
     .directive('contacts', function () {
         return {
             restrict: 'E',
