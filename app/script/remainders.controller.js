@@ -1,14 +1,17 @@
 'use strict';
 
-angular.module('sos.remainders', ['ngRoute'])
+angular
+    .module('sos.remainders', ['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/remainders', {
-    templateUrl: 'templates/remainders.html',
-    controller: 'Remainders1Ctrl'
-  });
-}])
+    .config(['$routeProvider', function ($routeProvider) {
+        $routeProvider.when('/reminders', {
+            templateUrl: 'templates/reminders.html',
+            controller: 'Remainders1Ctrl'
+        });
+    }])
 
-.controller('RemaindersCtrl', [function() {
+    // .controller('RemaindersCtrl', RemindersController);
 
-}]);
+    // function RemindersController() {
+    //
+    // }
