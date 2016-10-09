@@ -49,8 +49,8 @@ main .container {
 .main-container {
   width: 847px;
   height: 653px;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
+  background-position: center center;
+  background-repeat: no-repeat;
   margin: auto;
   position: relative;
 }
@@ -64,6 +64,31 @@ main .container {
   top: 160px;
   right: 50px;
 }
+.main-container .close-btn {
+  width: 39px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  background: url(img/elements/close-btn.png) no-repeat;
+  bottom: 35px;
+  left: 25px;
+}
+.main-container .close-btn:hover {
+  background: url(img/elements/close-btn-hover.png);
+}
+.main-container .help-btn {
+  width: 54px;
+  height: 56px;
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.main-container .help-btn:hover {
+  background: url(img/elements/reference-hover.png);
+  transition: .5s;
+}
 .main-container.main-screen {
   background: url(img/bg-start-page.png);
 }
@@ -75,7 +100,7 @@ main .container {
   font-family: B52, Georgia, serif;
   text-decoration: none;
   color: #000;
-  font-size: 25px;
+  font-size: 29px;
   margin: 40px 0;
   padding-left: 15px;
   cursor: pointer;
@@ -83,19 +108,6 @@ main .container {
 }
 .main-screen .left-block .btn:hover {
   background: url(img/elements/btn-hover.png);
-  transition: .5s;
-}
-.main-screen .right-block .help-btn {
-  width: 54px;
-  height: 56px;
-  position: absolute;
-  box-sizing: border-box;
-  padding-top: 4px;
-  text-align: center;
-  cursor: pointer;
-}
-.main-screen .right-block .help-btn:hover {
-  background: url(img/elements/reference-hover.png);
   transition: .5s;
 }
 .main-screen .right-block .help-btn.about-btn {
@@ -110,18 +122,9 @@ main .container {
   width: 463px;
   height: 643px;
   position: absolute;
-  background: url(img/contacts/reference-block-bg.png);
+  background: url(img/modal-bg-start-page.png);
   padding: 50px 60px 100px 50px;
   box-sizing: border-box;
-}
-.main-screen .close-btn {
-  width: 39px;
-  height: 40px;
-  position: absolute;
-  cursor: pointer;
-  background: url(img/elements/close-btn.png);
-  bottom: 35px;
-  left: 25px;
 }
 .main-container.contacts-screen {
   background: url(img/contacts/bg-contacts.png);
