@@ -7,45 +7,38 @@ angular.module('app', ['ngRoute', 'ngDialog'])
 
             .when('/', {
                 templateUrl: '../templates/firstscreen.html',
-                controller: 'main.screen.controller.js'
+                title: 'SOS!202',
+                controller: 'MainCtrl',
+                controllerAs: 'main'
             })
 
             .when('/contacts', {
                 templateUrl: '../templates/contacts.html',
-                controller: 'contacts.controller.js'
+                title: 'Контакты',
+                controller: 'ContactsCtrl',
+                controllerAs: 'contacts'
             })
 
             .when('/reminders', {
                 templateUrl: '../templates/reminders.html',
-                controller: 'reminders.controller.js'
+                title: 'Памятки',
+                controller: 'RemindersCtrl',
+                controllerAs: 'reminders'
             })
 
             .when('/quiz', {
                 templateUrl: '../templates/quiz.html',
-                controller: 'quiz.controller.js'
+                controller: 'QuizCtrl',
+                controllerAs: 'quiz'
             })
 
             .otherwise({redirectTo: '/'});
         }
-    ]);
+    ])
 
-    // .directive('firstscreen', function () {
-    //     return {
-    //         restrict: 'E',
-    //         templateUrl: '../templates/firstscreen.html'
-    //     }
-    // })
-    //
-    // .directive('contacts', function () {
-    //     return {
-    //         restrict: 'E',
-    //         templateUrl: '../templates/contacts.html'
-    //     }
-    // })
-    //
-    // .directive('reminders', function () {
-    //     return {
-    //         restrict: 'E',
-    //         templateUrl: '../templates/reminders.html'
-    //     }
-    // });
+    .directive('common', function () {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/common.html'
+        }
+    });

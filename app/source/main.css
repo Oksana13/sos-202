@@ -19,6 +19,9 @@ ol {
 .hidden {
   display: none;
 }
+.ngdialog-overlay {
+  background: none;
+}
 main {
   width: 100%;
   min-height: 768px;
@@ -64,18 +67,6 @@ main .container {
   top: 160px;
   right: 50px;
 }
-.main-container .close-btn {
-  width: 39px;
-  height: 40px;
-  position: absolute;
-  cursor: pointer;
-  background: url(img/elements/close-btn.png) no-repeat;
-  bottom: 35px;
-  left: 25px;
-}
-.main-container .close-btn:hover {
-  background: url(img/elements/close-btn-hover.png);
-}
 .main-container .help-btn {
   width: 54px;
   height: 56px;
@@ -88,6 +79,21 @@ main .container {
 .main-container .help-btn:hover {
   background: url(img/elements/reference-hover.png);
   transition: .5s;
+}
+.ngdialog-close {
+  width: 39px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  background: url(img/elements/close-btn.png) no-repeat;
+  bottom: 35px;
+  left: 25px;
+}
+.ngdialog-close:hover {
+  background: url(img/elements/close-btn-hover.png);
+}
+.ngdialog-close:before {
+  display: none;
 }
 .main-container.main-screen {
   background: url(img/bg-start-page.png);
@@ -122,6 +128,15 @@ main .container {
   width: 463px;
   height: 643px;
   position: absolute;
+  background: url(img/modal-bg-start-page.png);
+  padding: 50px 60px 100px 50px;
+  box-sizing: border-box;
+}
+.ngdialog-content {
+  width: 463px;
+  height: 643px;
+  margin: auto;
+  position: relative;
   background: url(img/modal-bg-start-page.png);
   padding: 50px 60px 100px 50px;
   box-sizing: border-box;

@@ -1,14 +1,18 @@
 'use strict';
 
-angular.module('sos')
-    
+angular.module('app')
+
     .controller('MainCtrl', MainController);
 
-function MainController($scope, ngDialog) {
+// MainController.$inject = ['ngDialog'];
 
-    $scope.clickToOpen = function() {
-        ngDialog.openConfirm({template: '../templates/main-modal.html',
-            scope: $scope
+function MainController(ngDialog) {
+
+    var self = this;
+
+    self.clickToOpen = function() {
+        ngDialog.openConfirm({
+            template: '../templates/main-modal.html'
         });
     };
 

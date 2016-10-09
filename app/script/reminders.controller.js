@@ -2,7 +2,7 @@
 
 angular.module('app')
 
-    .controller('RemaindersCtrl', RemindersController);
+    .controller('RemindersCtrl', RemindersController);
 
     function RemindersController() {
     }

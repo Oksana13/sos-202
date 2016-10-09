@@ -20,6 +20,10 @@ p, span, ul, ol {
     display: none;
 }
 
+.ngdialog-overlay {
+    background: none;
+}
+
 main {
     width: 100%;
     min-height: 768px;
@@ -70,19 +74,6 @@ main {
         top: 160px;
         right: 50px;
     }
-    .close-btn {
-        width: 39px;
-        height: 40px;
-        position: absolute;
-        cursor: pointer;
-        background: url(img/elements/close-btn.png) no-repeat;
-        bottom: 35px;
-        left: 25px;
-
-        &:hover {
-            background: url(img/elements/close-btn-hover.png);
-        }
-    }
 
     .help-btn {
         width: 54px;
@@ -98,6 +89,23 @@ main {
             transition: .5s;
         }
     }
+}
 
+.ngdialog-close {
+    width: 39px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    background: url(img/elements/close-btn.png) no-repeat;
+    bottom: 35px;
+    left: 25px;
+
+    &:hover {
+        background: url(img/elements/close-btn-hover.png);
+    }
+
+    &:before {
+        display: none;
+    }
 }
 

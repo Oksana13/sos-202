@@ -1,7 +1,9 @@
 'use strict';
 
-angular.module('app.quiz', ['ngRoute'])
+angular.module('app')
 
-    .controller('QuizCtrl', [function() {
+    .controller('QuizCtrl', QuizController);
 
-    }]);
+    function QuizController() {
+
+    }
