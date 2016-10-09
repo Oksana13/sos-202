@@ -28,6 +28,27 @@ main {
 	background-size: cover;
 	padding-top: 60px;
   	box-sizing: border-box;
+
+	.home-btn {
+		width: 101px;
+		height: 92px;
+		position: absolute;
+		cursor: pointer;
+		top: 115px;
+        left: -68px;
+        z-index: 10;
+
+		&:hover {
+			background: url(img/elements/home-hover.png);
+		}
+	}
+
+    .container {
+        width: 847px;
+        height: 653px;
+        margin: auto;
+        position: relative;
+    }
 }
 
 .main-container {
@@ -37,19 +58,6 @@ main {
 	background-repeat: no-repeat !important;
 	margin: auto;
 	position: relative;
-
-	.home-btn {
-		width: 101px;
-		height: 101px;
-		position: absolute;
-    	cursor: pointer;
-		top: 115px;
-    	left: -68px;
-
-    &:hover {
-    	background: url(img/elements/home-hover.png);
-    	}
-	}
 
 	.left-block {
 		position: absolute;

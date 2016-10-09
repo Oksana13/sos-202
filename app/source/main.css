@@ -28,6 +28,24 @@ main {
   padding-top: 60px;
   box-sizing: border-box;
 }
+main .home-btn {
+  width: 101px;
+  height: 92px;
+  position: absolute;
+  cursor: pointer;
+  top: 115px;
+  left: -68px;
+  z-index: 10;
+}
+main .home-btn:hover {
+  background: url(img/elements/home-hover.png);
+}
+main .container {
+  width: 847px;
+  height: 653px;
+  margin: auto;
+  position: relative;
+}
 .main-container {
   width: 847px;
   height: 653px;
@@ -35,17 +53,6 @@ main {
   background-repeat: no-repeat !important;
   margin: auto;
   position: relative;
-}
-.main-container .home-btn {
-  width: 101px;
-  height: 101px;
-  position: absolute;
-  cursor: pointer;
-  top: 115px;
-  left: -68px;
-}
-.main-container .home-btn:hover {
-  background: url(img/elements/home-hover.png);
 }
 .main-container .left-block {
   position: absolute;

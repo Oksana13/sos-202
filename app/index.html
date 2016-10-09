@@ -16,11 +16,11 @@
 </head>
 <body>
   <main>
-    <div class="main-container" ng-controller="MainCtrl as main" ng-class="{ 'contacts-screen': main.contactsBg, reminders: main.remindersBg,'main-screen': main.firstBg }">
-      <firstscreen></firstscreen>
-      <contacts ng-show="main.contactsActive"></contacts>
-      <reminders ng-show="main.remindersActive"></reminders>
-    </div>
+      <div class="container">
+      <a href="#/" class="home-btn"><img src="source/img/elements/home.png" alt=""></a>
+
+      <div ng-view></div>
+      </div>
   </main>
 
 
@@ -28,7 +28,7 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="script/app.js"></script>
   <script src="script/main.screen.controller.js"></script>
-  <script src="script/remainders.controller.js"></script>
+  <script src="script/reminders.controller.js"></script>
   <script src="script/contacts.controller.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
