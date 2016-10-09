@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sos.quiz', ['ngRoute'])
+angular.module('app.quiz', ['ngRoute'])
 
     .controller('QuizCtrl', [function() {
 

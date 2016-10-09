@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sos', ['ngRoute'])
+angular.module('app', ['ngRoute', 'ngDialog'])
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
@@ -27,7 +27,7 @@ angular.module('sos', ['ngRoute'])
 
             .otherwise({redirectTo: '/'});
         }
-    ])
+    ]);
 
     // .directive('firstscreen', function () {
     //     return {

@@ -4,8 +4,12 @@ angular.module('sos')
     
     .controller('MainCtrl', MainController);
 
-function MainController() {
+function MainController($scope, ngDialog) {
 
-    var self = this;
+    $scope.clickToOpen = function() {
+        ngDialog.openConfirm({template: '../templates/main-modal.html',
+            scope: $scope
+        });
+    };
 
 }

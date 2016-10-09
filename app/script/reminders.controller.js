@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sos')
+angular.module('app')
 
     .controller('RemaindersCtrl', RemindersController);
 
