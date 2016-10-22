@@ -32,6 +32,12 @@ angular.module('app', ['ngRoute', 'ngDialog'])
                 controllerAs: 'quizStart'
             })
 
+            .when('/quiz-character', {
+                templateUrl: '../templates/quiz/choose-character.html',
+                controller: 'characterCtrl',
+                controllerAs: 'character'
+            })
+
             .otherwise({redirectTo: '/'});
         }
     ])
@@ -40,5 +46,12 @@ angular.module('app', ['ngRoute', 'ngDialog'])
         return {
             restrict: 'E',
             templateUrl: '../templates/link-to-homepage.html'
+        }
+    })
+
+    .directive('controls', function () {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/quiz/prev-next-btns.html'
         }
     });

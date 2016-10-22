@@ -1,0 +1,100 @@
+.main-container {
+    &.quiz-character {
+        background: url(img/quiz/choose/choosing-character-bg.png) no-repeat;
+
+        .about-choose {
+            position: absolute;
+            left: 419px;
+            top: 70px;
+        }
+
+        .characters-block{
+            position: absolute;
+            bottom: 40px;
+            left: 125px;
+        }
+
+        .character-block {
+            width: 150px;
+            height: 335px;
+            display: inline-block;
+            vertical-align: bottom;
+            position: relative;
+
+            a {
+                display: block;
+            }
+
+            span {
+                display: inline-block;
+                font-family: B52, Georgia, serif;
+                font-size: 22px;
+                line-height: 20px;
+            }
+
+            .description {
+                width: 150px;
+                height: 43px;
+                position: absolute;
+                bottom: 0;
+            }
+
+            .help-btn {
+                width: 54px;
+                display: inline-block;
+            }
+
+            .girl {
+                width: 152px;
+                height: 268px;
+
+                &:hover {
+                    background: url(img/quiz/choose/lgbtk-girl-hover.png) no-repeat center center;
+                }
+            }
+
+            .friend {
+                width: 155px;
+                height: 274px;
+
+                &:hover {
+                    background: url(img/quiz/choose/friend-hover.png) no-repeat center center;
+                }
+            }
+
+            .parent {
+                width: 156px;
+                height: 287px;
+
+                &:hover {
+                    background: url(img/quiz/choose/parent-hover.png) no-repeat center center;
+                }
+            }
+
+            .helper {
+                width: 150px;
+                height: 292px;
+
+                &:hover {
+                    background: url(img/quiz/choose/helper-hover.png) no-repeat center center;
+                }
+            }
+
+            &:first-child {
+                span {
+                    width: 90px;
+                }
+            }
+
+            &:last-child {
+                span {
+                    width: 120px;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-left: 5px;
+            }
+        }
+    }
+}

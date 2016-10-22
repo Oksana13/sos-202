@@ -93,8 +93,30 @@ main {
         cursor: pointer;
 
         &:hover {
-            background: url(img/elements/reference-hover.png);
+            background: url(img/elements/reference-hover.png) no-repeat;
             transition: .5s;
+        }
+    }
+
+    .prev, .next {
+        width: 67px;
+        height: 57px;
+        position: absolute;
+        bottom: 60px;
+    }
+
+    .prev {
+        left: 23px;
+        text-align: right;
+        &:hover {
+            background: url(img/elements/arrow-left-hover.png) no-repeat;
+        }
+    }
+
+    .next {
+        right: 10px;
+        &:hover {
+            background: url(img/elements/arrow-right-hover.png) no-repeat;
         }
     }
 }

@@ -84,8 +84,28 @@ main .container {
   cursor: pointer;
 }
 .main-container .help-btn:hover {
-  background: url(img/elements/reference-hover.png);
+  background: url(img/elements/reference-hover.png) no-repeat;
   transition: .5s;
+}
+.main-container .prev,
+.main-container .next {
+  width: 67px;
+  height: 57px;
+  position: absolute;
+  bottom: 60px;
+}
+.main-container .prev {
+  left: 23px;
+  text-align: right;
+}
+.main-container .prev:hover {
+  background: url(img/elements/arrow-left-hover.png) no-repeat;
+}
+.main-container .next {
+  right: 10px;
+}
+.main-container .next:hover {
+  background: url(img/elements/arrow-right-hover.png) no-repeat;
 }
 .ngdialog-close {
   width: 39px;
@@ -174,4 +194,80 @@ main .container {
   background: url(img/modal-bg-start-page.png);
   padding: 50px 60px 100px 50px;
   box-sizing: border-box;
+}
+.main-container.quiz-character {
+  background: url(img/quiz/choose/choosing-character-bg.png) no-repeat;
+}
+.main-container.quiz-character .about-choose {
+  position: absolute;
+  left: 419px;
+  top: 70px;
+}
+.main-container.quiz-character .characters-block {
+  position: absolute;
+  bottom: 40px;
+  left: 125px;
+}
+.main-container.quiz-character .character-block {
+  width: 150px;
+  height: 335px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+}
+.main-container.quiz-character .character-block a {
+  display: block;
+}
+.main-container.quiz-character .character-block span {
+  display: inline-block;
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+  line-height: 20px;
+}
+.main-container.quiz-character .character-block .description {
+  width: 150px;
+  height: 43px;
+  position: absolute;
+  bottom: 0;
+}
+.main-container.quiz-character .character-block .help-btn {
+  width: 54px;
+  display: inline-block;
+}
+.main-container.quiz-character .character-block .girl {
+  width: 152px;
+  height: 268px;
+}
+.main-container.quiz-character .character-block .girl:hover {
+  background: url(img/quiz/choose/lgbtk-girl-hover.png) no-repeat center center;
+}
+.main-container.quiz-character .character-block .friend {
+  width: 155px;
+  height: 274px;
+}
+.main-container.quiz-character .character-block .friend:hover {
+  background: url(img/quiz/choose/friend-hover.png) no-repeat center center;
+}
+.main-container.quiz-character .character-block .parent {
+  width: 156px;
+  height: 287px;
+}
+.main-container.quiz-character .character-block .parent:hover {
+  background: url(img/quiz/choose/parent-hover.png) no-repeat center center;
+}
+.main-container.quiz-character .character-block .helper {
+  width: 150px;
+  height: 292px;
+}
+.main-container.quiz-character .character-block .helper:hover {
+  background: url(img/quiz/choose/helper-hover.png) no-repeat center center;
+}
+.main-container.quiz-character .character-block:first-child span {
+  width: 90px;
+}
+.main-container.quiz-character .character-block:last-child span {
+  width: 120px;
+}
+.main-container.quiz-character .character-block:nth-child(2) {
+  margin-left: 5px;
 }
