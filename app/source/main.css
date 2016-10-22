@@ -271,3 +271,6 @@ main .container {
 .main-container.quiz-character .character-block:nth-child(2) {
   margin-left: 5px;
 }
+.main-container.quiz-sources {
+  background: url(img/quiz/sources/sources-bg.png) no-repeat;
+}

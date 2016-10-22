@@ -38,6 +38,12 @@ angular.module('app', ['ngRoute', 'ngDialog'])
                 controllerAs: 'character'
             })
 
+            .when('/sources', {
+                templateUrl: '../templates/quiz/sources.html',
+                controller: 'SourcesCtrl',
+                controllerAs: 'sources'
+            })
+
             .otherwise({redirectTo: '/'});
         }
     ])
