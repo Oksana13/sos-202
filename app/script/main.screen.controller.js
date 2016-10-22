@@ -4,15 +4,14 @@ angular.module('app')
 
     .controller('MainCtrl', MainController);
 
-// MainController.$inject = ['ngDialog'];
-
 function MainController(ngDialog) {
 
     var self = this;
 
     self.clickToOpen = function() {
-        ngDialog.openConfirm({
-            template: '../templates/main-modal.html'
+        ngDialog.open({
+            template: '../templates/main-modal.html',
+            appendTo: '.main-screen'
         });
     };
 

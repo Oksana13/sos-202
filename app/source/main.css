@@ -124,14 +124,6 @@ main .container {
   right: 240px;
   top: 315px;
 }
-.main-screen .help-block {
-  width: 463px;
-  height: 643px;
-  position: absolute;
-  background: url(img/modal-bg-start-page.png);
-  padding: 50px 60px 100px 50px;
-  box-sizing: border-box;
-}
 .ngdialog-content {
   width: 463px;
   height: 643px;
