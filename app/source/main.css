@@ -67,6 +67,13 @@ main .container {
   top: 160px;
   right: 50px;
 }
+.main-container .btn {
+  text-align: left;
+  font-family: B52, Georgia, serif;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
 .main-container .help-btn {
   width: 54px;
   height: 56px;
@@ -102,15 +109,9 @@ main .container {
   width: 195px;
   min-height: 52px;
   display: block;
-  text-align: left;
-  font-family: B52, Georgia, serif;
-  text-decoration: none;
-  color: #000;
   font-size: 29px;
   margin: 40px 0;
   padding-left: 15px;
-  cursor: pointer;
-  transition: .5s;
 }
 .main-screen .left-block .btn:hover {
   background: url(img/elements/btn-hover.png);
@@ -134,8 +135,43 @@ main .container {
   box-sizing: border-box;
 }
 .main-container.contacts-screen {
-  background: url(img/contacts/bg-contacts.png);
+  background: url(img/contacts/bg-contacts.png) no-repeat;
 }
 .main-container.reminders {
-  background: url(img/memos/bg-memo.png);
+  background: url(img/memos/bg-memo.png) no-repeat;
+}
+.main-container.quiz-start {
+  background: url(img/quiz/start-screen/start-bg.png) no-repeat;
+}
+.main-container.quiz-start .left-block {
+  width: 350px;
+}
+.main-container.quiz-start .left-block .help-btn.about-btn {
+  right: 0;
+  top: -50px;
+}
+.main-container.quiz-start .right-block {
+  width: 350px;
+  top: 330px;
+  text-align: center;
+}
+.main-container.quiz-start .right-block .startBtn {
+  width: 131px;
+  height: 58px;
+  display: inline-block;
+  font-size: 29px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.main-container.quiz-start .right-block .startBtn:hover {
+  background: url(img/quiz/start-screen/start-btn.png) no-repeat left center;
+}
+.ngdialog-content {
+  width: 463px;
+  height: 643px;
+  margin: auto;
+  position: relative;
+  background: url(img/modal-bg-start-page.png);
+  padding: 50px 60px 100px 50px;
+  box-sizing: border-box;
 }

@@ -27,18 +27,18 @@ angular.module('app', ['ngRoute', 'ngDialog'])
             })
 
             .when('/quiz', {
-                templateUrl: '../templates/quiz.html',
-                controller: 'QuizCtrl',
-                controllerAs: 'quiz'
+                templateUrl: '../templates/quiz/quiz-start.html',
+                controller: 'QuizStartCtrl',
+                controllerAs: 'quizStart'
             })
 
             .otherwise({redirectTo: '/'});
         }
     ])
 
-    .directive('common', function () {
+    .directive('linktohomepage', function () {
         return {
             restrict: 'E',
-            templateUrl: '../templates/common.html'
+            templateUrl: '../templates/link-to-homepage.html'
         }
     });

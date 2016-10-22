@@ -1,0 +1,45 @@
+.main-container {
+    &.quiz-start {
+        background: url(img/quiz/start-screen/start-bg.png) no-repeat;
+
+        .left-block {
+            width: 350px;
+
+            .help-btn {
+                &.about-btn {
+                    right: 0;
+                    top: -50px;
+                }
+            }
+        }
+
+        .right-block {
+            width: 350px;
+            top: 330px;
+            text-align: center;
+
+            .startBtn {
+                width: 131px;
+                height: 58px;
+                display: inline-block;
+                font-size: 29px;
+                padding-left: 20px;
+                padding-top: 5px;
+
+                &:hover {
+                    background: url(img/quiz/start-screen/start-btn.png) no-repeat left center;
+                }
+            }
+        }
+    }
+}
+
+.ngdialog-content {
+    width: 463px;
+    height: 643px;
+    margin: auto;
+    position: relative;
+    background: url(img/modal-bg-start-page.png);
+    padding: 50px 60px 100px 50px;
+    box-sizing: border-box;
+}
