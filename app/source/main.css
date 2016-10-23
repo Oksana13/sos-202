@@ -274,3 +274,77 @@ main .container {
 .main-container.quiz-sources {
   background: url(img/quiz/sources/sources-bg.png) no-repeat;
 }
+.main-container.quiz-sources .resources-about {
+  left: 380px;
+  top: 60px;
+}
+.main-container.quiz-sources .left-block {
+  width: 265px;
+  top: 120px;
+  left: 130px;
+}
+.main-container.quiz-sources .left-block span {
+  max-width: 165px;
+}
+.main-container.quiz-sources .right-block {
+  width: 320px;
+  top: 50px;
+  right: 82px;
+}
+.main-container.quiz-sources .right-block .resource-type .row {
+  height: 80px;
+}
+.main-container.quiz-sources .right-block .resource-type .help-btn {
+  top: -5px;
+}
+.main-container.quiz-sources .right-block span {
+  max-width: 225px;
+}
+.main-container.quiz-sources .resource-type {
+  position: relative;
+}
+.main-container.quiz-sources .resource-type span {
+  display: inline-block;
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+  line-height: 20px;
+}
+.main-container.quiz-sources .resource-type .row {
+  height: 40px;
+  position: relative;
+}
+.main-container.quiz-sources .resource-type .help-btn {
+  left: -50px;
+  top: -10px;
+}
+.main-container.quiz-sources h3 {
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+  padding: 9px 10px 0;
+}
+.main-container.quiz-sources titlebg {
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+.main-container.quiz-sources titlebg svg {
+  width: 215px;
+  height: auto;
+}
+.main-container.quiz-sources .openness h3 {
+  padding-top: 13px;
+}
+.main-container.quiz-sources .openness svg {
+  width: 245px;
+}
+.main-container.quiz-sources .common h3 {
+  text-align: right;
+  padding: 18px 20px 0 0;
+}
+.main-container.quiz-sources .common titlebg {
+  right: -50px;
+  left: auto;
+}
+.main-container.quiz-sources .common titlebg svg {
+  width: 310px;
+}

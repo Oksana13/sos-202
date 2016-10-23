@@ -60,4 +60,11 @@ angular.module('app', ['ngRoute', 'ngDialog'])
             restrict: 'E',
             templateUrl: '../templates/quiz/prev-next-btns.html'
         }
+    })
+
+    .directive('titlebg', function () {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/quiz/title.html'
+        }
     });

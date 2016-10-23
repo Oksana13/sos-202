@@ -1,5 +1,133 @@
 .main-container {
     &.quiz-sources {
         background: url(img/quiz/sources/sources-bg.png) no-repeat;
+
+        //input {
+        //    display: none;
+        //}
+        //label:before {
+        //    content: "";
+        //    display: inline-block;
+        //
+        //    width: 16px;
+        //    height: 16px;
+        //
+        //    margin-right: 10px;
+        //    //position: absolute;
+        //    left: 0;
+        //    bottom: 1px;
+        //    background-color: #aaa;
+        //    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+        //}
+        //
+        //input[type=radio]:checked + label:before {
+        //    content: "\2022";
+        //    color: #f3f3f3;
+        //    font-size: 30px;
+        //    text-align: center;
+        //    line-height: 18px;
+        //}
+
+        .resources-about {
+            left: 380px;
+            top: 60px;
+        }
+
+        .left-block {
+            width: 265px;
+            top: 120px;
+            left: 130px;
+
+            span {
+                max-width: 165px;
+            }
+
+        }
+
+        .right-block {
+            width: 320px;
+            top: 50px;
+            right: 82px;
+
+            .resource-type {
+                .row {
+                    height: 80px;
+                }
+
+                .help-btn {
+                    top: -5px;
+                }
+            }
+
+            span {
+                max-width: 225px;
+            }
+        }
+
+        .resource-type {
+            position: relative;
+
+            span {
+                display: inline-block;
+                font-family: B52, Georgia, serif;
+                font-size: 22px;
+                line-height: 20px;
+            }
+
+            .row {
+                height: 40px;
+                position: relative;
+            }
+
+            .help-btn {
+                left: -50px;
+                top: -10px;
+            }
+
+
+        }
+
+        h3 {
+            font-family: B52, Georgia, serif;
+            font-size: 22px;
+            padding: 9px 10px 0;
+        }
+
+        titlebg {
+            position: absolute;
+            top: 0;
+            left: -50px;
+
+            svg {
+                width: 215px;
+                height: auto;
+            }
+        }
+
+        .openness {
+            h3 {
+                padding-top: 13px;
+            }
+
+            svg {
+                width: 245px;
+            }
+        }
+
+        .common {
+            h3 {
+                text-align: right;
+                padding: 18px 20px 0 0;
+            }
+
+            titlebg {
+                right: -50px;
+                left: auto;
+
+                svg {
+                    width: 310px;
+                }
+            }
+        }
     }
 }
