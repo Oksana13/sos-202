@@ -347,20 +347,27 @@ main .container {
 .main-container.quiz-sources .age .options input {
   display: none;
 }
+.main-container.quiz-sources .age .options .age-bg {
+  border-radius: 50%;
+  background: #e8c551;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
 .main-container.quiz-sources .age .options label {
   width: 47px;
   height: 47px;
   display: inline-block;
-  border-radius: 50%;
-  background: #e8c551;
   font-family: B52, Georgia, serif;
   font-size: 22px;
   line-height: 48px;
   box-sizing: border-box;
   padding-left: 5px;
   margin-left: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+}
+.main-container.quiz-sources .age .options label:hover {
+  border-radius: 50%;
+  background: #e8c551;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 .main-container.quiz-sources .openness h3 {
   padding-top: 13px;

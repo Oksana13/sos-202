@@ -114,20 +114,27 @@
                     display: none;
                 }
 
+                .age-bg {
+                    border-radius: 50%;
+                    background: #e8c551;
+                    box-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+                }
+
                 label {
                     width: 47px;
                     height: 47px;
                     display: inline-block;
-                    border-radius: 50%;
-                    background: #e8c551;
                     font-family: B52, Georgia, serif;
                     font-size: 22px;
                     line-height: 48px;
                     box-sizing: border-box;
                     padding-left: 5px;
                     margin-left: 5px;
-                    box-shadow: 5px 5px 5px rgba(0,0,0,0.75);
                     cursor: pointer;
+
+                    &:hover {
+                        .age-bg;
+                    }
                 }
             }
         }
