@@ -94,6 +94,14 @@ main .container {
   position: absolute;
   bottom: 60px;
 }
+.main-container .prev.disabled,
+.main-container .next.disabled {
+  cursor: default;
+}
+.main-container .prev.disabled:hover,
+.main-container .next.disabled:hover {
+  background: none;
+}
 .main-container .prev {
   left: 23px;
   text-align: right;
