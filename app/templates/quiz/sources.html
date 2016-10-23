@@ -21,6 +21,18 @@
             <h3>Возраст</h3>
             <titlebg></titlebg>
 
+            <div class="options">
+                <label ng-repeat="age in ages" for="{{age}}">
+                    <input  type="radio"
+                            ng-model="ageRes.val"
+                            ng-value="age"
+                            id="{{age}}"
+                            name="age">
+                    {{age}}
+                </label>
+                <div>{{ageRes.val}}</div>
+            </div>
+
         </div>
 
         <!--isolation-->
@@ -33,11 +45,13 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Социальная</span>
-                <label><input type="radio" name="social" value="1"></label>
-                <label><input type="radio" name="social" value="2"></label>
-                <label><input type="radio" name="social" value="3"></label>
-                <label><input type="radio" name="social" value="4"></label>
-                <label><input type="radio" name="social" value="5"></label>
+                <label ng-repeat="social in socials" for="{{social}}">
+                    <input  type="radio"
+                            ng-model="socialRes.val"
+                            ng-value="social"
+                            id="{{social}}"
+                            name="social">
+                </label>
             </div>
 
             <div class="row">
@@ -45,11 +59,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Когнитивная</span>
-                <input type="radio" name="cognitive" value="1">
-                <input type="radio" name="cognitive" value="2">
-                <input type="radio" name="cognitive" value="3">
-                <input type="radio" name="cognitive" value="4">
-                <input type="radio" name="cognitive" value="5">
+
+                <label ng-repeat="cognitive in cognitives" for="{{cognitive}}">
+                    <input  type="radio"
+                            ng-model="cognitiveRes.val"
+                            ng-value="cognitive"
+                            id="{{cognitive}}"
+                            name="cognitive">
+                </label>
             </div>
 
             <div class="row">
@@ -57,11 +74,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Эмоциональная</span>
-                <input type="radio" name="emotional" value="1">
-                <input type="radio" name="emotional" value="2">
-                <input type="radio" name="emotional" value="3">
-                <input type="radio" name="emotional" value="4">
-                <input type="radio" name="emotional" value="5">
+
+                <label ng-repeat="emotional in emotionals" for="{{emotional}}">
+                    <input  type="radio"
+                            ng-model="emotionalRes.val"
+                            ng-value="emotional"
+                            id="{{emotional}}"
+                            name="emotional">
+                </label>
             </div>
         </div>
         <!--isolation-->
@@ -76,11 +96,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Имидж</span>
-                <input type="radio" name="image" value="1">
-                <input type="radio" name="image" value="2">
-                <input type="radio" name="image" value="3">
-                <input type="radio" name="image" value="4">
-                <input type="radio" name="image" value="5">
+
+                <label ng-repeat="image in images" for="{{image}}">
+                    <input  type="radio"
+                            ng-model="imageRes.val"
+                            ng-value="image"
+                            id="{{image}}"
+                            name="image">
+                </label>
             </div>
 
             <div class="row">
@@ -88,11 +111,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Каминаут в семье</span>
-                <input type="radio" name="family" value="1">
-                <input type="radio" name="family" value="2">
-                <input type="radio" name="family" value="3">
-                <input type="radio" name="family" value="4">
-                <input type="radio" name="family" value="5">
+
+                <label ng-repeat="family in families" for="{{family}}">
+                    <input  type="radio"
+                            ng-model="familyRes.val"
+                            ng-value="family"
+                            id="{{family}}"
+                            name="family">
+                </label>
             </div>
 
             <div class="row">
@@ -100,11 +126,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Каминаут в коллективе</span>
-                <input type="radio" name="work" value="1">
-                <input type="radio" name="work" value="2">
-                <input type="radio" name="work" value="3">
-                <input type="radio" name="work" value="4">
-                <input type="radio" name="work" value="5">
+
+                <label ng-repeat="work in works" for="{{work}}">
+                    <input  type="radio"
+                            ng-model="workRes.val"
+                            ng-value="work"
+                            id="{{work}}"
+                            name="work">
+                </label>
             </div>
         </div>
         <!--openness-->
@@ -124,11 +153,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Нейронормативность/ненормативность</span>
-                <input type="radio" name="nonstandard" value="1">
-                <input type="radio" name="nonstandard" value="2">
-                <input type="radio" name="nonstandard" value="3">
-                <input type="radio" name="nonstandard" value="4">
-                <input type="radio" name="nonstandard" value="5">
+
+                <label ng-repeat="nonstandard in nonstandards" for="{{nonstandard}}">
+                    <input  type="radio"
+                            ng-model="nonstandardRes.val"
+                            ng-value="nonstandard"
+                            id="{{nonstandard}}"
+                            name="nonstandard">
+                </label>
             </div>
 
             <div class="row">
@@ -136,11 +168,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Здоровье</span>
-                <input type="radio" name="health" value="1">
-                <input type="radio" name="health" value="2">
-                <input type="radio" name="health" value="3">
-                <input type="radio" name="health" value="4">
-                <input type="radio" name="health" value="5">
+
+                <label ng-repeat="health in healths" for="{{health}}">
+                    <input  type="radio"
+                            ng-model="healthRes.val"
+                            ng-value="health"
+                            id="{{health}}"
+                            name="health">
+                </label>
             </div>
 
             <div class="row">
@@ -148,11 +183,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Материальная независимость</span>
-                <input type="radio" name="financial" value="1">
-                <input type="radio" name="financial" value="2">
-                <input type="radio" name="financial" value="3">
-                <input type="radio" name="financial" value="4">
-                <input type="radio" name="financial" value="5">
+
+                <label ng-repeat="financial in financials" for="{{financial}}">
+                    <input  type="radio"
+                            ng-model="financialRes.val"
+                            ng-value="financial"
+                            id="{{financial}}"
+                            name="financial">
+                </label>
             </div>
 
             <div class="row">
@@ -160,11 +198,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Место жительства</span>
-                <input type="radio" name="location" value="1">
-                <input type="radio" name="location" value="2">
-                <input type="radio" name="location" value="3">
-                <input type="radio" name="location" value="4">
-                <input type="radio" name="location" value="5">
+
+                <label ng-repeat="location in locations" for="{{location}}">
+                    <input  type="radio"
+                            ng-model="locationRes.val"
+                            ng-value="location"
+                            id="{{location}}"
+                            name="location">
+                </label>
             </div>
 
             <div class="row">
@@ -172,11 +213,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Этнорелигиозная принадлежность</span>
-                <input type="radio" name="religion" value="1">
-                <input type="radio" name="religion" value="2">
-                <input type="radio" name="religion" value="3">
-                <input type="radio" name="religion" value="4">
-                <input type="radio" name="religion" value="5">
+
+                <label ng-repeat="religion in religions" for="{{religion}}">
+                    <input  type="radio"
+                            ng-model="religionRes.val"
+                            ng-value="religion"
+                            id="{{religion}}"
+                            name="religion">
+                </label>
             </div>
 
             <div class="row">
@@ -184,11 +228,14 @@
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Внутренняя гомофобия</span>
-                <input type="radio" name="homophobia" value="1">
-                <input type="radio" name="homophobia" value="2">
-                <input type="radio" name="homophobia" value="3">
-                <input type="radio" name="homophobia" value="4">
-                <input type="radio" name="homophobia" value="5">
+
+                <label ng-repeat="homophobia in homophobias" for="{{homophobia}}">
+                    <input  type="radio"
+                            ng-model="homophobiaRes.val"
+                            ng-value="homophobia"
+                            id="{{homophobia}}"
+                            name="homophobia">
+                </label>
             </div>
         </div>
         <!--common resources-->
