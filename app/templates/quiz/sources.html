@@ -26,11 +26,11 @@
                     <input  type="radio"
                             ng-model="ageRes.val"
                             ng-value="age"
+                            ng-change="checkAge()"
                             id="{{age}}"
                             name="age">
                     {{age}}
                 </label>
-                <div>{{ageRes.val}}</div>
             </div>
 
         </div>
@@ -49,6 +49,7 @@
                     <input  type="radio"
                             ng-model="socialRes.val"
                             ng-value="social"
+                            ng-change="checkIsolation()"
                             id="{{social}}"
                             name="social">
                 </label>
@@ -64,6 +65,7 @@
                     <input  type="radio"
                             ng-model="cognitiveRes.val"
                             ng-value="cognitive"
+                            ng-change="checkIsolation()"
                             id="{{cognitive}}"
                             name="cognitive">
                 </label>
@@ -79,6 +81,7 @@
                     <input  type="radio"
                             ng-model="emotionalRes.val"
                             ng-value="emotional"
+                            ng-change="checkIsolation()"
                             id="{{emotional}}"
                             name="emotional">
                 </label>
@@ -101,6 +104,7 @@
                     <input  type="radio"
                             ng-model="imageRes.val"
                             ng-value="image"
+                            ng-change="checkOpenness()"
                             id="{{image}}"
                             name="image">
                 </label>
@@ -116,6 +120,7 @@
                     <input  type="radio"
                             ng-model="familyRes.val"
                             ng-value="family"
+                            ng-change="checkOpenness()"
                             id="{{family}}"
                             name="family">
                 </label>
@@ -131,6 +136,7 @@
                     <input  type="radio"
                             ng-model="workRes.val"
                             ng-value="work"
+                            ng-change="checkOpenness()"
                             id="{{work}}"
                             name="work">
                 </label>
@@ -143,7 +149,7 @@
 
     <div class="right-block">
 
-        <!--common resources-->
+        <!--common sources-->
         <div class="resource-type common">
             <h3>Общие ресурсы</h3>
             <titlebg></titlebg>
@@ -158,6 +164,7 @@
                     <input  type="radio"
                             ng-model="nonstandardRes.val"
                             ng-value="nonstandard"
+                            ng-change="checkCommon()"
                             id="{{nonstandard}}"
                             name="nonstandard">
                 </label>
@@ -173,6 +180,7 @@
                     <input  type="radio"
                             ng-model="healthRes.val"
                             ng-value="health"
+                            ng-change="checkCommon()"
                             id="{{health}}"
                             name="health">
                 </label>
@@ -188,6 +196,7 @@
                     <input  type="radio"
                             ng-model="financialRes.val"
                             ng-value="financial"
+                            ng-change="checkCommon()"
                             id="{{financial}}"
                             name="financial">
                 </label>
@@ -203,6 +212,7 @@
                     <input  type="radio"
                             ng-model="locationRes.val"
                             ng-value="location"
+                            ng-change="checkCommon()"
                             id="{{location}}"
                             name="location">
                 </label>
@@ -218,6 +228,7 @@
                     <input  type="radio"
                             ng-model="religionRes.val"
                             ng-value="religion"
+                            ng-change="checkCommon()"
                             id="{{religion}}"
                             name="religion">
                 </label>
@@ -233,12 +244,13 @@
                     <input  type="radio"
                             ng-model="homophobiaRes.val"
                             ng-value="homophobia"
+                            ng-change="checkCommon()"
                             id="{{homophobia}}"
                             name="homophobia">
                 </label>
             </div>
         </div>
-        <!--common resources-->
+        <!--common sources-->
 
     </div>
 
