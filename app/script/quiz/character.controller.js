@@ -4,9 +4,20 @@ angular.module('app')
 
     .controller('characterCtrl', characterController);
 
-function characterController(ngDialog) {
+function characterController(ngDialog, SourcesService) {
 
-    var self = this;
+    var vm = this,
+        character;
+
+    vm.setCharacter = function (event) {
+
+        character = event.currentTarget.id;
+
+        SourcesService.setCharacter(character);
+
+    };
+    
+    
 
     // self.clickToOpen = function() {
     //     ngDialog.open({

@@ -4,7 +4,7 @@ angular.module('app')
 
     .controller('SourcesCtrl', SourcesController);
 
-function SourcesController(ngDialog, sources) {
+function SourcesController(ngDialog, SourcesService) {
 
     var vm = this,
         age, social, cognitive, emotional, image, family, work, nonstandard, health, financial, location, religion, homophobia, isolation, openness, common;
@@ -88,7 +88,7 @@ function SourcesController(ngDialog, sources) {
 
         common = +nonstandard + +health + +financial + +location + +religion + +homophobia;
 
-        sources.setCommon(common);
+        SourcesService.setCommon(common);
         return common;
     };
 
