@@ -45,9 +45,9 @@ angular.module('app', ['ngRoute', 'ngDialog'])
             })
 
             .otherwise({redirectTo: '/'});
-        }
+    }
     ])
-
+ 
     .directive('linktohomepage', function () {
         return {
             restrict: 'E',
@@ -61,3 +61,32 @@ angular.module('app', ['ngRoute', 'ngDialog'])
             templateUrl: '../templates/quiz/title.html'
         }
     });
+
+    // .provider('isolation', function () {
+    //     var vm = this,
+    //         data = {};
+    //     angular.extend(vm, {
+    //         data: getData,
+    //         init: init
+    //     });
+    //
+    //     function init() {
+    //
+    //     }
+    //
+    //     function getData() {
+    //         return data;
+    //     }
+    //
+    //     this.$get = function ($http) {
+    //         // code to initialize/configure the SERVICE goes here (executed during `run` stage)
+    //         $http.get("source/json/data.json")
+    //             .then(function (response) {
+    //                 debugger;
+    //                 data = response.data;
+    //             }, function (error) {
+    //                 //some magic
+    //             });
+    //         return data;
+    //     };
+    // });

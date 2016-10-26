@@ -4,62 +4,62 @@ angular.module('app')
 
     .controller('SourcesCtrl', SourcesController);
 
-function SourcesController($scope, ngDialog) {
+function SourcesController(ngDialog, sources) {
 
-    var self = this,
+    var vm = this,
         age, social, cognitive, emotional, image, family, work, nonstandard, health, financial, location, religion, homophobia, isolation, openness, common;
 
-    $scope.ages = ['18-', '18+'];
-    $scope.ageRes = {val: ''};
+    vm.ages = ['18-', '18+'];
+    vm.ageRes = {val: ''};
 
-    $scope.socials = ['1', '2', '3', '4', '5'];
-    $scope.socialRes = {val: ''};
+    vm.socials = ['1', '2', '3', '4', '5'];
+    vm.socialRes = {val: ''};
 
-    $scope.cognitives = ['1', '2', '3', '4', '5'];
-    $scope.cognitiveRes = {val: ''};
+    vm.cognitives = ['1', '2', '3', '4', '5'];
+    vm.cognitiveRes = {val: ''};
 
-    $scope.emotionals = ['1', '2', '3', '4', '5'];
-    $scope.emotionalRes = {val: ''};
+    vm.emotionals = ['1', '2', '3', '4', '5'];
+    vm.emotionalRes = {val: ''};
 
-    $scope.images = ['1', '2', '3', '4', '5'];
-    $scope.imageRes = {val: ''};
+    vm.images = ['1', '2', '3', '4', '5'];
+    vm.imageRes = {val: ''};
 
-    $scope.families = ['1', '2', '3', '4', '5'];
-    $scope.familyRes = {val: ''};
+    vm.families = ['1', '2', '3', '4', '5'];
+    vm.familyRes = {val: ''};
 
-    $scope.works = ['1', '2', '3', '4', '5'];
-    $scope.workRes = {val: ''};
+    vm.works = ['1', '2', '3', '4', '5'];
+    vm.workRes = {val: ''};
 
-    $scope.nonstandards = ['1', '2', '3', '4', '5'];
-    $scope.nonstandardRes = {val: ''};
+    vm.nonstandards = ['1', '2', '3', '4', '5'];
+    vm.nonstandardRes = {val: ''};
 
-    $scope.healths = ['1', '2', '3', '4', '5'];
-    $scope.healthRes = {val: ''};
+    vm.healths = ['1', '2', '3', '4', '5'];
+    vm.healthRes = {val: ''};
 
-    $scope.financials = ['1', '2', '3', '4', '5'];
-    $scope.financialRes = {val: ''};
+    vm.financials = ['1', '2', '3', '4', '5'];
+    vm.financialRes = {val: ''};
 
-    $scope.locations = ['1', '2', '3', '4', '5'];
-    $scope.locationRes = {val: ''};
+    vm.locations = ['1', '2', '3', '4', '5'];
+    vm.locationRes = {val: ''};
 
-    $scope.religions = ['1', '2', '3', '4', '5'];
-    $scope.religionRes = {val: ''};
+    vm.religions = ['1', '2', '3', '4', '5'];
+    vm.religionRes = {val: ''};
 
-    $scope.homophobias = ['1', '2', '3', '4', '5'];
-    $scope.homophobiaRes = {val: ''};
+    vm.homophobias = ['1', '2', '3', '4', '5'];
+    vm.homophobiaRes = {val: ''};
 
 
-    $scope.checkAge = function () {
-        age = $scope.ageRes.val;
+    vm.checkAge = function () {
+        age = vm.ageRes.val;
 
         return age;
 
     };
 
-    $scope.checkIsolation = function () {
-        social = $scope.socialRes.val,
-        cognitive = $scope.cognitiveRes.val,
-        emotional = $scope.emotionalRes.val;
+    vm.checkIsolation = function () {
+        social = vm.socialRes.val,
+            cognitive = vm.cognitiveRes.val,
+            emotional = vm.emotionalRes.val;
 
         isolation = +social + +cognitive + +emotional;
 
@@ -67,10 +67,10 @@ function SourcesController($scope, ngDialog) {
     };
 
 
-    $scope.checkOpenness = function () {
-        image = $scope.imageRes.val,
-        family = $scope.familyRes.val,
-        work = $scope.workRes.val;
+    vm.checkOpenness = function () {
+        image = vm.imageRes.val,
+            family = vm.familyRes.val,
+            work = vm.workRes.val;
 
         openness = +image + +family + +work;
 
@@ -78,22 +78,19 @@ function SourcesController($scope, ngDialog) {
     };
 
 
-    $scope.checkCommon = function () {
-        nonstandard = $scope.nonstandardRes.val,
-        health = $scope.healthRes.val,
-        financial = $scope.financialRes.val,
-        location = $scope.locationRes.val,
-        religion = $scope.religionRes.val,
-        homophobia = $scope.homophobiaRes.val;
+    vm.checkCommon = function () {
+        nonstandard = vm.nonstandardRes.val,
+            health = vm.healthRes.val,
+            financial = vm.financialRes.val,
+            location = vm.locationRes.val,
+            religion = vm.religionRes.val,
+            homophobia = vm.homophobiaRes.val;
 
         common = +nonstandard + +health + +financial + +location + +religion + +homophobia;
 
+        sources.setCommon(common);
         return common;
     };
-
-
-
-
 
 
     // self.clickToOpen = function() {
