@@ -14,7 +14,6 @@ function characterController(ngDialog, SourcesService) {
         character = event.currentTarget.id;
 
         SourcesService.setCharacter(character);
-
     };
     
     

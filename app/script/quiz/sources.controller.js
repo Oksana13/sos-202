@@ -7,6 +7,7 @@ angular.module('app')
 function SourcesController(ngDialog, SourcesService) {
 
     var vm = this,
+        arr,
         age, social, cognitive, emotional, image, family, work, nonstandard, health, financial, location, religion, homophobia, isolation, openness, common;
 
     vm.ages = ['18-', '18+'];
@@ -52,44 +53,65 @@ function SourcesController(ngDialog, SourcesService) {
     vm.checkAge = function () {
         age = vm.ageRes.val;
 
-        return age;
+        SourcesService.setAge(age);
 
     };
 
     vm.checkIsolation = function () {
         social = vm.socialRes.val,
-            cognitive = vm.cognitiveRes.val,
-            emotional = vm.emotionalRes.val;
+        cognitive = vm.cognitiveRes.val,
+        emotional = vm.emotionalRes.val;
+
+        arr = {
+            1: +social,
+            2: +cognitive,
+            3: +emotional
+        };
 
         isolation = +social + +cognitive + +emotional;
 
-        return isolation;
+        SourcesService.setIsolation(isolation, arr);
     };
 
 
     vm.checkOpenness = function () {
         image = vm.imageRes.val,
-            family = vm.familyRes.val,
-            work = vm.workRes.val;
+        family = vm.familyRes.val,
+        work = vm.workRes.val;
+
+        arr = {
+            1: +image,
+            2: +family,
+            3: +work
+        };
 
         openness = +image + +family + +work;
 
-        return openness;
+        SourcesService.setOpenness(openness, arr);
     };
 
 
     vm.checkCommon = function () {
         nonstandard = vm.nonstandardRes.val,
-            health = vm.healthRes.val,
-            financial = vm.financialRes.val,
-            location = vm.locationRes.val,
-            religion = vm.religionRes.val,
-            homophobia = vm.homophobiaRes.val;
+        health = vm.healthRes.val,
+        financial = vm.financialRes.val,
+        location = vm.locationRes.val,
+        religion = vm.religionRes.val,
+        homophobia = vm.homophobiaRes.val;
+
+        arr = {
+            1: +nonstandard,
+            2: +health,
+            3: +financial,
+            4: +location,
+            5: +religion,
+            6: +homophobia
+        };
 
         common = +nonstandard + +health + +financial + +location + +religion + +homophobia;
+        // todo: rewrite count on source.service.js
 
-        SourcesService.setCommon(common);
-        return common;
+        SourcesService.setCommon(common, arr);
     };
 
 
