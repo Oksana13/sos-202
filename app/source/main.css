@@ -246,28 +246,32 @@ main .container {
   width: 152px;
   height: 268px;
 }
-.main-container.quiz-character .character-block .girl:hover {
+.main-container.quiz-character .character-block .girl:hover,
+.main-container.quiz-character .character-block .girl.active {
   background: url(img/quiz/choose/lgbtk-girl-hover.png) no-repeat center center;
 }
 .main-container.quiz-character .character-block .friend {
   width: 155px;
   height: 274px;
 }
-.main-container.quiz-character .character-block .friend:hover {
+.main-container.quiz-character .character-block .friend:hover,
+.main-container.quiz-character .character-block .friend.active {
   background: url(img/quiz/choose/friend-hover.png) no-repeat center center;
 }
 .main-container.quiz-character .character-block .parent {
   width: 156px;
   height: 287px;
 }
-.main-container.quiz-character .character-block .parent:hover {
+.main-container.quiz-character .character-block .parent:hover,
+.main-container.quiz-character .character-block .parent.active {
   background: url(img/quiz/choose/parent-hover.png) no-repeat center center;
 }
 .main-container.quiz-character .character-block .helper {
   width: 150px;
   height: 292px;
 }
-.main-container.quiz-character .character-block .helper:hover {
+.main-container.quiz-character .character-block .helper:hover,
+.main-container.quiz-character .character-block .helper.active {
   background: url(img/quiz/choose/helper-hover.png) no-repeat center center;
 }
 .main-container.quiz-character .character-block:first-child span {

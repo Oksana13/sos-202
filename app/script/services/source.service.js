@@ -31,7 +31,6 @@
         });
 
         function getterSetterCharacter(id) {
-            console.log(character);
             return arguments.length ? character = id : character;
         }
 
