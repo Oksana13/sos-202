@@ -66,6 +66,13 @@ angular.module('app', ['ngRoute', 'ngDialog'])
             restrict: 'E',
             templateUrl: '../templates/quiz/title.html'
         }
+    })
+
+    .directive('bookmark', function () {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/bookmark.html'
+        }
     });
 
     // .provider('isolation', function () {

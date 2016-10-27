@@ -49,6 +49,16 @@ main .container {
   margin: auto;
   position: relative;
 }
+main .bookmark {
+  width: 52px;
+  height: 87px;
+  position: absolute;
+  right: 75px;
+  top: -8px;
+}
+main .bookmark:hover {
+  background: url(img/quiz/type-of-violence/bookmark-hover.png) no-repeat center center;
+}
 .main-container {
   width: 847px;
   height: 653px;
@@ -402,8 +412,6 @@ main .container {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  box-sizing: border-box;
-  padding-top: 5px;
 }
 .main-container.quiz-calc .left-block .row:nth-child(2) {
   margin-top: 50px;
@@ -450,15 +458,61 @@ main .container {
   background: url(img/quiz/type-of-violence/common-hover.png) no-repeat center top;
 }
 .main-container.quiz-calc .right-block {
-  width: 321px;
+  width: 265px;
+  right: 100px;
+}
+.main-container.quiz-calc .right-block .align {
+  margin-left: 90px;
 }
 .main-container.quiz-calc .right-block a {
+  height: 56px;
   display: block;
   text-decoration: none;
-  text-align: right;
+  padding-left: 20px;
   color: #000;
+}
+.main-container.quiz-calc .right-block .cil {
+  width: 233px;
+}
+.main-container.quiz-calc .right-block .cil:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .bulling {
+  width: 233px;
+}
+.main-container.quiz-calc .right-block .bulling:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .stulking {
+  width: 233px;
+}
+.main-container.quiz-calc .right-block .stulking:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .speech {
+  width: 233px;
+}
+.main-container.quiz-calc .right-block .speech:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .violence {
+  width: 322px;
+  height: 56px;
+}
+.main-container.quiz-calc .right-block .violence:hover {
+  background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .discrimination {
+  width: 321px;
+  height: 75px;
+  line-height: 27px;
+}
+.main-container.quiz-calc .right-block .discrimination:hover {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
 }
 .main-container.quiz-calc a {
   font-family: B52, Georgia, serif;
   font-size: 22px;
+  box-sizing: border-box;
+  padding-top: 5px;
 }

@@ -11,8 +11,6 @@
                 display: inline-block;
                 text-align: center;
                 cursor: pointer;
-                box-sizing: border-box;
-                padding-top: 5px;
             }
 
             .row:nth-child(2) {
@@ -75,19 +73,78 @@
         }
 
         .right-block {
-            width: 321px;
+            width: 265px;
+            right: 100px;
+
+            .align {
+                margin-left: 90px;
+            }
 
             a {
+                height: 56px;
                 display: block;
                 text-decoration: none;
-                text-align: right;
+                padding-left: 20px;
                 color: #000;
+            }
+
+            .cil {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .bulling {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .stulking {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .speech {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .violence {
+                width: 322px;
+                height: 56px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+                }
+            }
+
+            .discrimination {
+                width: 321px;
+                height: 75px;
+                line-height: 27px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+                }
             }
         }
 
         a {
             font-family: B52, Georgia, serif;
             font-size: 22px;
+            box-sizing: border-box;
+            padding-top: 5px;
         }
     }
 }
