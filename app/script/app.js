@@ -44,6 +44,12 @@ angular.module('app', ['ngRoute', 'ngDialog'])
                 controllerAs: 'sources'
             })
 
+            .when('/results', {
+                templateUrl: '../templates/quiz/resource.calculation.html',
+                controller: 'calculationCtrl',
+                controllerAs: 'calculation'
+            })
+
             .otherwise({redirectTo: '/'});
     }
     ])

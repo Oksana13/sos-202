@@ -390,3 +390,75 @@ main .container {
 .main-container.quiz-sources .common titlebg svg {
   width: 310px;
 }
+.main-container.quiz-calc {
+  background: url(img/quiz/type-of-violence/type-of-violence-bg.png) no-repeat;
+}
+.main-container.quiz-calc .left-block {
+  left: 90px;
+  top: 177px;
+}
+.main-container.quiz-calc .left-block a {
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+.main-container.quiz-calc .left-block .row:nth-child(2) {
+  margin-top: 50px;
+}
+.main-container.quiz-calc .left-block .row:last-child {
+  margin-top: 53px;
+}
+.main-container.quiz-calc .left-block .sex {
+  width: 64px;
+}
+.main-container.quiz-calc .left-block .sex:hover {
+  background: url(img/quiz/type-of-violence/sex-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .left-block .age {
+  width: 109px;
+}
+.main-container.quiz-calc .left-block .age:hover {
+  background: url(img/quiz/type-of-violence/age-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .left-block .orientation {
+  width: 141px;
+}
+.main-container.quiz-calc .left-block .orientation:hover {
+  background: url(img/quiz/type-of-violence/orientation-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .left-block .openness {
+  width: 151px;
+}
+.main-container.quiz-calc .left-block .openness:hover {
+  background: url(img/quiz/type-of-violence/openness-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .left-block .isolation {
+  width: 142px;
+}
+.main-container.quiz-calc .left-block .isolation:hover {
+  background: url(img/quiz/type-of-violence/isolation-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .left-block .common {
+  width: 221px;
+  text-align: left;
+  padding-left: 15px;
+}
+.main-container.quiz-calc .left-block .common:hover {
+  background: url(img/quiz/type-of-violence/common-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block {
+  width: 321px;
+}
+.main-container.quiz-calc .right-block a {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  color: #000;
+}
+.main-container.quiz-calc a {
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+}

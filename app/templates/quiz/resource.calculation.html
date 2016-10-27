@@ -1,0 +1,42 @@
+<div class="main-container quiz-calc">
+    <linkToHomepage></linkToHomepage>
+    <div class="controls">
+        <a href="#/quiz" class="prev">
+            <img src="source/img/elements/arrow-left.png">
+        </a>
+
+        <a ng-href="{{character.getCharacter() == undefined ? '' : '#/sources'}}" class="next"
+           ng-class="{true: 'disabled'}[character.getCharacter() == undefined]">
+            <img src="source/img/elements/arrow-right.png">
+        </a>
+    </div>
+
+    <div class="left-block">
+        <div class="row">
+            <a id="sex" class="sex">Пол</a>
+            <a id="age" class="age">Возраст</a>
+            <a id="orientation" class="orientation">Ориентация</a>
+        </div>
+        <div class="row">
+            <a id="openness" class="openness">Открытость</a>
+            <a id="isolation" class="isolation">Изоляция</a>
+        </div>
+        <div class="row">
+            <a id="common" class="common">Общие Ресурсы</a>
+        </div>
+    </div>
+
+    <div class="right-block">
+        <a href="" id="cil" class="cil">- КИЛ</a>
+        <a href="" id="bulling" class="bulling">- Буллинг</a>
+        <a href="" id="stulking" class="stulking">- Сталкинг</a>
+        <a href="" id="speech" class="speech">- Хейт-спич</a>
+        <a href="" id="violence" class="violence">- Домашнее насилие</a>
+        <a href="" id="discrimination" class="discrimination">- Дискриминация со стороны специалистов</a>
+    </div>
+
+
+
+
+
+</div>
