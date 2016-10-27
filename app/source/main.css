@@ -467,9 +467,19 @@ main .bookmark:hover {
 .main-container.quiz-calc .right-block a {
   height: 56px;
   display: block;
+  position: relative;
   text-decoration: none;
   padding-left: 20px;
   color: #000;
+}
+.main-container.quiz-calc .right-block a .active {
+  width: 33px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  background: url(img/quiz/type-of-violence/active.png) no-repeat 0px top;
 }
 .main-container.quiz-calc .right-block .cil {
   width: 233px;
