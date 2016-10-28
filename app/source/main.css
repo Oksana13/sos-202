@@ -140,6 +140,23 @@ main .bookmark:hover {
 .ngdialog-close:before {
   display: none;
 }
+.copyright {
+  width: 260px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-family: Cambria, Georgia, serif;
+  color: #b6b6b6;
+  line-height: 18px;
+  font-size: 16px;
+}
+.copyright a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
 .main-container.main-screen {
   background: url(img/bg-start-page.png);
 }
@@ -480,6 +497,7 @@ main .bookmark:hover {
   left: -40px;
   top: 10px;
   background: url(img/quiz/type-of-violence/active.png) no-repeat 0px top;
+  display: none;
 }
 .main-container.quiz-calc .right-block .cil {
   width: 233px;
