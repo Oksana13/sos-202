@@ -50,6 +50,12 @@ angular.module('app', ['ngRoute', 'ngDialog'])
                 controllerAs: 'calculation'
             })
 
+            .when('/strategies', {
+                templateUrl: '../templates/quiz/strategies.html',
+                controller: 'strategiesCtrl',
+                controllerAs: 'strategies'
+            })
+
             .otherwise({redirectTo: '/'});
     }
     ])
