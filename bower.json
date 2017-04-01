@@ -1,17 +1,31 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "name": "SOS-202",
+  "homepage": "https://github.com/Oksana13/sos-202",
+  "description": "Information app for LBTIC-girls who are victims of violence",
+  "main": "index.html",
+  "keywords": [
+    "LBTIC",
+    "victim",
+    "violence",
+    "help"
+  ],
+  "authors": [
+    "Oksana Klimova"
+  ],
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "~1.5.0",
-    "angular-route": "~1.5.0",
-    "angular-loader": "~1.5.0",
-    "angular-mocks": "~1.5.0",
-    "html5-boilerplate": "^5.3.0",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-loader": "latest",
     "ngDialog": "latest",
-    "jquery": "^3.1.0"
-  }
+    "angular-bootstrap": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

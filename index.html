@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html lang="ru" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html lang="ru" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SOS!202</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="source/main.css">
+  </head>
+  <body>
+    <main>
+        <div ng-view></div>
+        <div class="copyright">Разработано при поддержке <a href="https://te-st.ru/" target="_blank">Теплицы социальных тенхнологий</a></div>
+    </main>
+
+    <!--vendor-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ngDialog/js/ngDialog.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+    <!--app components-->
+    <script src="components/Components.module.js"></script>
+    <script src="app.js"></script>
+
+    <script src="Services/Source.service.js"></script>
+
+    <script src="components/Main/Main-screen.component.js"></script>
+    <script src="components/Contacts/Contacts.component.js"></script>
+    <script src="components/Reminders/Reminders.component.js"></script>
+    <script src="components/Quiz/Quiz.component.js"></script>
+    <script src="components/Quiz/ChooseCharacter/ChooseCharacter.component.js"></script>
+    <script src="components/Quiz/Sources/Sources.component.js"></script>
+    <script src="components/Quiz/ResourceCalc/ResourceCalc.component.js"></script>
+    <script src="components/Quiz/Strategies/Strategies.component.js"></script>
+    <script src="components/Common/HomeBtn/HomeBtn.component.js"></script>
+    <script src="components/Common/TitleBg/TitleBg.component.js"></script>
+
+  </body>
+</html>
+

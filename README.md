@@ -1,6 +1,11 @@
 # sos-202
 
- To launch local server you can use node.js and node manager package (nmp).
+  **Install all components trough Bower:**
+    ```
+    bower install
+    ```
+
+ To launch local server use node.js and node manager package (nmp).
 
  **Install http-server globally:**
    ```
