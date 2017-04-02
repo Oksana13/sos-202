@@ -5,7 +5,7 @@
         .service('SourcesService', SourcesService);
 
     function SourcesService() {
-        var $ctrl = this, character, isolation, openness, common,
+        let $ctrl = this, character, isolation, openness, common,
             ageStack = false,
             opennessStack = false,
             isolationStack = false,
@@ -45,7 +45,7 @@
         }
 
         function getterSetterIsolation(isolation, arr) {
-            var notNullValue = true;
+            let notNullValue = true;
 
             angular.forEach(arr, function (value, key) {
                 value == 0 ? notNullValue = false : true
@@ -62,7 +62,7 @@
         }
 
         function getterSetterOpenness(openness, arr) {
-            var notNullValue = true;
+            let notNullValue = true;
 
             angular.forEach(arr, function (value, key) {
                 value == 0 ? notNullValue = false : true
@@ -70,15 +70,15 @@
 
             notNullValue ? opennessStack = true : opennessStack = false;
 
-            if (openness.length) {
-                openness = value;
-            } else {
-                return openness;
-            }
+            // if (openness.length) {
+            //     openness = value;
+            // } else {
+            //     return openness;
+            // }
         }
 
         function getterSetterCommon(common, arr) {
-            var notNullValue = true;
+            let notNullValue = true;
 
             angular.forEach(arr, function (value, key) {
                 value == 0 ? notNullValue = false : true

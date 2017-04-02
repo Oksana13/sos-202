@@ -4,7 +4,7 @@
     angular
         .module('components')
         .component('contacts', {
-            templateUrl: 'components/Contacts/Contacts.html',
+            templateUrl: 'Components/Contacts/Contacts.html',
             controller: 'contacts'
         })
         .controller('contacts', contacts);

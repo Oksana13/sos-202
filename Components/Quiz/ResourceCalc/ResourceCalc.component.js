@@ -3,16 +3,16 @@
 
     angular
         .module('components')
-        .component('reminders', {
-            templateUrl: 'components/Reminders/Reminders.html',
-            controller: 'reminders'
+        .component('calculation', {
+            templateUrl: 'Components/Quiz/ResourceCalc/ResourceCalc.html',
+            controller: 'calculation'
         })
-        .controller('reminders', reminders);
+        .controller('calculation', calculation);
 
 
-    function reminders(ngDialog){
+    function calculation(ngDialog){
         let $ctrl = this;
-
+        //
         // $ctrl.clickToOpen = function() {
         //     ngDialog.open({
         //         template: '../templates/main-modal.html',

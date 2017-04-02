@@ -4,13 +4,13 @@
     angular
         .module('components')
         .component('chooseCharacter', {
-            templateUrl: 'components/Quiz/ChooseCharacter/ChooseCharacter.html',
+            templateUrl: 'Components/Quiz/ChooseCharacter/ChooseCharacter.html',
             controller: 'chooseCharacter'
         })
         .controller('chooseCharacter', chooseCharacter);
 
 
-    function chooseCharacter(ngDialog){
+    function chooseCharacter(SourcesService, ngDialog){
         let $ctrl = this,
             character,
             currentCharacter;

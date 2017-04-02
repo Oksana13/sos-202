@@ -4,7 +4,7 @@
     angular
         .module('components')
         .component('mainScreen', {
-            templateUrl: 'components/Main/Main-screen.html',
+            templateUrl: 'Components/Main/Main-screen.html',
             controller: 'mainScreen'
         })
         .controller('mainScreen', mainScreen);

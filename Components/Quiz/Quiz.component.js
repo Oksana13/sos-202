@@ -3,14 +3,14 @@
 
     angular
         .module('components')
-        .component('strategies', {
-            templateUrl: 'components/Quiz/Strategies/Strategies.html',
-            controller: 'strategies'
+        .component('quiz', {
+            templateUrl: 'Components/Quiz/Quiz.html',
+            controller: 'quiz'
         })
-        .controller('strategies', strategies);
+        .controller('quiz', quiz);
 
 
-    function strategies (ngDialog){
+    function quiz(){
         let $ctrl = this;
 
         $ctrl.clickToOpen = function() {

@@ -4,7 +4,7 @@
     angular
         .module('components')
         .component('sources', {
-            templateUrl: 'components/Quiz/Sources/Sources.html',
+            templateUrl: 'Components/Quiz/Sources/Sources.html',
             controller: 'sources'
         })
         .controller('sources', sources);
@@ -81,8 +81,8 @@
 
         $ctrl.checkOpenness = function () {
             image = $ctrl.imageRes.val,
-                family = $ctrl.familyRes.val,
-                work = $ctrl.workRes.val;
+            family = $ctrl.familyRes.val,
+            work = $ctrl.workRes.val;
 
             arr = {
                 1: +image,
@@ -93,6 +93,7 @@
             openness = +image + +family + +work;
 
             SourcesService.setOpenness(openness, arr);
+            console.log(SourcesService.getOpenness());
         };
 
 
@@ -117,6 +118,7 @@
             // todo: rewrite count on source.service.js
 
             SourcesService.setCommon(common, arr);
+            // console.log(SourcesService.getCommon());
         };
 
     }
