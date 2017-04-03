@@ -10,7 +10,7 @@
         .controller('sources', sources);
 
 
-    function sources(ngDialog, SourcesService){
+    function sources(ngDialog, SourcesService, $rootScope){
         let $ctrl = this,
             arr,
             age, social, cognitive, emotional, image, family, work, nonstandard, health, financial, location, religion, homophobia, isolation, openness, common;
@@ -60,8 +60,7 @@
 
             SourcesService.setAge(age);
             SourcesService.setAgeStack(age);
-            // console.log(SourcesService.getAge());
-            // console.log(SourcesService.getAgeStack());
+            SourcesService.uploadedAllStacks();
 
 
         };
@@ -81,9 +80,7 @@
 
             SourcesService.setIsolation(isolation);
             SourcesService.setIsolationStack(isolation, arr);
-            //
-            // console.log(SourcesService.getIsolation());
-            // console.log(SourcesService.getIsolationStack());
+            SourcesService.uploadedAllStacks();
         };
 
 
@@ -102,9 +99,7 @@
 
             SourcesService.setOpennessStack(openness, arr);
             SourcesService.setOpenness(openness);
-
-            // console.log(SourcesService.getOpenness());
-            // console.log(SourcesService.getOpennessStack());
+            SourcesService.uploadedAllStacks();
         };
 
 
@@ -130,11 +125,16 @@
 
             SourcesService.setCommon(common);
             SourcesService.setCommonStack(common, arr);
-
-            // console.log(SourcesService.getCommon());
-            // // console.log(SourcesService.getCommonStack());
-            // console.log(SourcesService.getAllStacks());
+            SourcesService.uploadedAllStacks();
         };
+
+        $rootScope.$on('uploadedAllStacks', function () {
+            console.log(SourcesService.getAllStacks());
+
+            $ctrl.allStacks = function () {
+                return SourcesService.getAllStacks();
+            };
+        });
 
     }
 })();

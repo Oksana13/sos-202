@@ -4,7 +4,7 @@
     angular.module('app')
         .service('SourcesService', SourcesService);
 
-    function SourcesService() {
+    function SourcesService($rootScope) {
         let $ctrl = this, age, character, isolation, openness, common,
             ageStack = false,
             opennessStack = false,
@@ -140,6 +140,11 @@
 
                 return allStack;
 
+            },
+
+
+            uploadedAllStacks: function () {
+                $rootScope.$emit('uploadedAllStacks', allStack);
             }
 
         }
