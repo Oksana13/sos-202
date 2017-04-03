@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'B52';
-  src: url('fonts/B52.eot');
-  src: url('fonts/B52.eot?#iefix') format('eot'), url('fonts/B52.woff') format('woff'), url('fonts/B52.ttf') format('truetype'), url('fonts/B52.svg') format('svg');
+  src: url('fonts/London.ttf') format('ttf'), url('fonts/London.woff') format('woff'), url('fonts/London.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -134,6 +133,7 @@ main .bookmark:hover {
   position: relative;
   background: url(img/modal-bg-start-page.png);
   padding: 50px 45px 100px 50px;
+  margin-top: 25px;
   box-sizing: border-box;
 }
 .popup-content {
@@ -169,9 +169,8 @@ main .bookmark:hover {
 }
 .copyright {
   width: 260px;
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
+  position: relative;
+  float: right;
   font-family: Cambria, Georgia, serif;
   color: #b6b6b6;
   line-height: 18px;
@@ -337,7 +336,7 @@ main .bookmark:hover {
 .main-container.quiz-sources .right-block {
   width: 320px;
   top: 50px;
-  right: 82px;
+  right: 54px;
 }
 .main-container.quiz-sources .right-block .resource-type .row {
   height: 80px;
@@ -346,7 +345,7 @@ main .bookmark:hover {
   top: -5px;
 }
 .main-container.quiz-sources .right-block span {
-  max-width: 225px;
+  max-width: 190px;
 }
 .main-container.quiz-sources .resource-type {
   position: relative;
@@ -509,10 +508,12 @@ main .bookmark:hover {
   display: none;
 }
 .main-container.quiz-calc .right-block .cil {
-  width: 233px;
+  width: 300px;
+  height: 75px;
+  line-height: 27px;
 }
 .main-container.quiz-calc .right-block .cil:hover {
-  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
 }
 .main-container.quiz-calc .right-block .bulling {
   width: 233px;
