@@ -22,11 +22,15 @@
 
 
     <div class="left-block psychologist">
-
+        <p ng-repeat="p in $ctrl.result[0].violenceType[0].text1 track by $index">
+            {{p}}
+        </p>
     </div>
 
     <div class="right-block lawyer">
-
+        <p ng-repeat="p in $ctrl.result[0].violenceType[0].text2 track by $index">
+            {{p}}
+        </p>
     </div>
 
 

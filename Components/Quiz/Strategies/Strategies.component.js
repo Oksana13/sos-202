@@ -10,7 +10,7 @@
         .controller('strategies', strategies);
 
 
-    function strategies (ngDialog){
+    function strategies (ngDialog, $http){
         let $ctrl = this;
 
         $ctrl.clickToOpen = function() {
@@ -19,6 +19,20 @@
                 appendTo: '.main-screen'
             });
         };
+
+        $http.get('Data/Violence-type.json')
+            .then(function (response) {
+                    $ctrl.result = response.data;
+
+                    console.log($ctrl.result);
+
+                },
+                function (errResponse) {
+                    console.log(errResponse);
+                });
+
+
+
 
     }
 })();
