@@ -1,4 +1,5 @@
-<div class="main-container quiz-strategies">
+<div class="main-container quiz-strategies"
+     ng-class="{girl: $ctrl.character() == 'girl', friend: $ctrl.character() == 'friend', parent: $ctrl.character() == 'parent', helper: $ctrl.character() == 'helper'}">
     <home></home>
     <bookmark></bookmark>
     <div class="controls">
@@ -21,16 +22,24 @@
     </div>
 
 
-    <div class="left-block psychologist">
-        <p ng-repeat="p in $ctrl.result[0].violenceType[0].text1 track by $index">
-            {{p}}
-        </p>
+    <div class="left-block">
+        <!--<p ng-repeat="p in $ctrl.result[0].violenceType[0].text1 track by $index">-->
+            <!--{{p}}-->
+        <!--</p>-->
+        <div class="strategy-btn survival"
+           ng-click="$ctrl.clickToOpenSurvival()"></div>
+        <div class="strategy-btn coping"
+           ng-click="$ctrl.clickToOpenCoping()"></div>
+        <div class="strategy-btn resistance"
+           ng-click="$ctrl.clickToOpenResistance()"></div>
+        <div class="strategy-btn mutualaid"
+           ng-click="$ctrl.clickToOpenMutualAid()"></div>
     </div>
 
-    <div class="right-block lawyer">
-        <p ng-repeat="p in $ctrl.result[0].violenceType[0].text2 track by $index">
-            {{p}}
-        </p>
+    <div class="right-block ">
+        <!--<p ng-repeat="p in $ctrl.result[0].violenceType[0].text2 track by $index">-->
+            <!--{{p}}-->
+        <!--</p>-->
     </div>
 
 

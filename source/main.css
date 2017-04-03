@@ -559,5 +559,59 @@ main .bookmark:hover {
   padding-top: 5px;
 }
 .main-container.quiz-strategies {
-  background: url(img/quiz/strategies/activist-comment-bg.png) no-repeat;
+  background: url(img/quiz/strategies/girl-bg.png) no-repeat;
+}
+.main-container.quiz-strategies .left-block {
+  left: 110px;
+}
+.main-container.quiz-strategies.girl {
+  background: url(img/quiz/strategies/girl-bg.png) no-repeat;
+}
+.main-container.quiz-strategies.friend {
+  background: url(img/quiz/strategies/friend-bg.png) no-repeat;
+}
+.main-container.quiz-strategies.parent {
+  background: url(img/quiz/strategies/parent-bg.png) no-repeat;
+}
+.main-container.quiz-strategies.helper {
+  background: url(img/quiz/strategies/helper-bg.png) no-repeat;
+}
+.main-container.quiz-strategies .next {
+  right: -35px;
+}
+.main-container.quiz-strategies .strategy-btn {
+  display: block;
+  cursor: pointer;
+}
+.main-container.quiz-strategies .strategy-btn.survival {
+  height: 73px;
+  width: 230px;
+  background: url(img/quiz/strategies/survival-btn.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.survival:hover {
+  background: url(img/quiz/strategies/survival-btn-hover.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.coping {
+  height: 73px;
+  width: 261px;
+  background: url(img/quiz/strategies/coping-btn.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.coping:hover {
+  background: url(img/quiz/strategies/coping-btn-hover.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.resistance {
+  height: 68px;
+  width: 298px;
+  background: url(img/quiz/strategies/resistance-btn.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.resistance:hover {
+  background: url(img/quiz/strategies/resistance-btn-hover.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.mutualaid {
+  height: 68px;
+  width: 300px;
+  background: url(img/quiz/strategies/mutual-aid-btn.png) no-repeat;
+}
+.main-container.quiz-strategies .strategy-btn.mutualaid:hover {
+  background: url(img/quiz/strategies/mutual-aid-btn-hover.png) no-repeat;
 }
