@@ -126,6 +126,16 @@ main .bookmark:hover {
 .main-container .next:hover {
   background: url(img/elements/arrow-right-hover.png) no-repeat;
 }
+.ngdialog-content {
+  width: 463px;
+  height: 643px;
+  overflow-y: hidden;
+  margin: auto;
+  position: relative;
+  background: url(img/modal-bg-start-page.png);
+  padding: 50px 45px 100px 50px;
+  box-sizing: border-box;
+}
 .popup-content {
   height: 510px;
   overflow-y: scroll;
@@ -197,16 +207,6 @@ main .bookmark:hover {
   right: 240px;
   top: 315px;
 }
-.ngdialog-content {
-  width: 463px;
-  height: 643px;
-  overflow-y: hidden;
-  margin: auto;
-  position: relative;
-  background: url(img/modal-bg-start-page.png);
-  padding: 50px 45px 100px 50px;
-  box-sizing: border-box;
-}
 .main-container.contacts-screen {
   background: url(img/contacts/bg-contacts.png) no-repeat;
 }
@@ -238,15 +238,6 @@ main .bookmark:hover {
 }
 .main-container.quiz-start .right-block .startBtn:hover {
   background: url(img/quiz/start-screen/start-btn.png) no-repeat left center;
-}
-.ngdialog-content {
-  width: 463px;
-  height: 643px;
-  margin: auto;
-  position: relative;
-  background: url(img/modal-bg-start-page.png);
-  padding: 50px 60px 100px 50px;
-  box-sizing: border-box;
 }
 .main-container.quiz-character {
   background: url(img/quiz/choose/choosing-character-bg.png) no-repeat;
