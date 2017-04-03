@@ -145,6 +145,26 @@ main {
     }
 }
 
+.popup-content {
+    height: 510px;
+    overflow-y: scroll;
+    padding-right: 20px;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 20px;
+    }
+}
+
 .ngdialog-close {
     width: 39px;
     height: 40px;

@@ -126,6 +126,22 @@ main .bookmark:hover {
 .main-container .next:hover {
   background: url(img/elements/arrow-right-hover.png) no-repeat;
 }
+.popup-content {
+  height: 510px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+.popup-content::-webkit-scrollbar {
+  width: 10px;
+}
+.popup-content::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+.popup-content::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
 .ngdialog-close {
   width: 39px;
   height: 40px;
@@ -184,10 +200,11 @@ main .bookmark:hover {
 .ngdialog-content {
   width: 463px;
   height: 643px;
+  overflow-y: hidden;
   margin: auto;
   position: relative;
   background: url(img/modal-bg-start-page.png);
-  padding: 50px 60px 100px 50px;
+  padding: 50px 45px 100px 50px;
   box-sizing: border-box;
 }
 .main-container.contacts-screen {
