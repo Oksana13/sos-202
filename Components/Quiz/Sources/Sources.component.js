@@ -60,7 +60,8 @@
 
             SourcesService.setAge(age);
             SourcesService.setAgeStack(age);
-            SourcesService.uploadedAllStacks();
+            SourcesService.updatedAllStacks();
+            console.log(SourcesService.getAge());
 
 
         };
@@ -80,7 +81,7 @@
 
             SourcesService.setIsolation(isolation);
             SourcesService.setIsolationStack(isolation, arr);
-            SourcesService.uploadedAllStacks();
+            SourcesService.updatedAllStacks();
         };
 
 
@@ -99,7 +100,7 @@
 
             SourcesService.setOpennessStack(openness, arr);
             SourcesService.setOpenness(openness);
-            SourcesService.uploadedAllStacks();
+            SourcesService.updatedAllStacks();
         };
 
 
@@ -125,12 +126,10 @@
 
             SourcesService.setCommon(common);
             SourcesService.setCommonStack(common, arr);
-            SourcesService.uploadedAllStacks();
+            SourcesService.updatedAllStacks();
         };
 
-        $rootScope.$on('uploadedAllStacks', function () {
-            console.log(SourcesService.getAllStacks());
-
+        $rootScope.$on(' updateAllStacks', function () {
             $ctrl.allStacks = function () {
                 return SourcesService.getAllStacks();
             };

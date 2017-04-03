@@ -14,17 +14,17 @@
 
         //...Stack - checks are all inputs checked or not
 
-        angular.extend($ctrl,{
-
-            getCharacter: getterSetterCharacter,
-            setCharacter: getterSetterCharacter,
-        });
-
-        function getterSetterCharacter(id) {
-            return arguments.length ? character = id : character;
-        }
-
         return {
+
+            // Character
+
+            setCharacter: function (id) {
+                character = id
+            },
+
+            getCharacter: function () {
+                return character
+            },
 
             // age
 
@@ -39,7 +39,11 @@
             },
 
             getAge: function () {
-                return age;
+                if (age == '18-'){
+                    return true
+                } else {
+                    return false
+                }
             },
 
             setAgeStack: function (age) {
@@ -143,9 +147,13 @@
             },
 
 
-            uploadedAllStacks: function () {
-                $rootScope.$emit('uploadedAllStacks', allStack);
+            updatedAllStacks: function () {
+                $rootScope.$emit(' updatedAllStacks', allStack);
             }
+
+            // updateAge: function () {
+            //     $rootScope.$emit('updateAge', age);
+            // }
 
         }
 

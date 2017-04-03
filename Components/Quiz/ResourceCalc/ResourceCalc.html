@@ -13,37 +13,55 @@
 
     <div class="left-block">
         <div class="row">
-            <a id="sex" class="sex">Пол</a>
-            <a id="age" class="age">Возраст</a>
-            <a id="orientation" class="orientation">Ориентация</a>
+            <a id="sex" class="sex" ng-click="$ctrl.clickToOpenSex()">Пол</a>
+            <a id="age" class="age" ng-click="$ctrl.clickToOpenAge()">Возраст</a>
+            <a id="orientation" class="orientation" ng-click="$ctrl.clickToOpenOrientation()">Ориентация</a>
         </div>
         <div class="row">
-            <a id="openness" class="openness">Открытость</a>
-            <a id="isolation" class="isolation">Изоляция</a>
+            <a id="openness" class="openness" ng-click="$ctrl.clickToOpenOpenness()">Открытость</a>
+            <a id="isolation" class="isolation" ng-click="$ctrl.clickToOpenIsolation()">Изоляция</a>
         </div>
         <div class="row">
-            <a id="common" class="common">Общие Ресурсы</a>
+            <a id="common" class="common" ng-click="$ctrl.clickToOpenCommon()">Общие Ресурсы</a>
         </div>
     </div>
 
     <div class="right-block">
+        <!--<div class="help-btn type" ng-click="$ctrl.clickToOpenType()">-->
+            <!--<img src="source/img/elements/reference.png">-->
+        <!--</div>-->
         <div class="align">
+            <div class="help-btn" ng-click="$ctrl.clickToOpenhomeViolence()">
+                <img src="source/img/elements/reference.png">
+            </div>
             <a href="" id=" homeViolence" class="violence">- Домашнее насилие
                 <span class="active"></span>
             </a>
 
+            <div class="help-btn" ng-click="$ctrl.clickToOpenPartnerViolence()">
+                <img src="source/img/elements/reference.png">
+            </div>
             <a href="" id="PartnerViolence" class="violence">- Партнерское насилие
                 <span class="active"></span>
             </a>
 
+            <div class="help-btn" ng-click="$ctrl.clickToOpenstulking()">
+                <img src="source/img/elements/reference.png">
+            </div>
             <a href="" id="stulking" class="stulking">- Сталкинг
                 <span class="active"></span>
             </a>
 
+            <div class="help-btn" ng-click="$ctrl.clickToOpencil()">
+                <img src="source/img/elements/reference.png">
+            </div>
             <a href="" id="cil" class="cil">- Корректирующее изнасилование
                 <span class="active"></span>
             </a>
 
+            <div class="help-btn" ng-click="$ctrl.clickToOpenbulling()">
+                <img src="source/img/elements/reference.png">
+            </div>
             <a href="" id="bulling" class="bulling">- Буллинг
                 <span class="active"></span>
             </a>
@@ -51,11 +69,15 @@
             <!--<a href="" id="speech" class="speech">- Хейт-спич-->
                 <!--<span class="active"></span>-->
             <!--</a>-->
+
+            <div class="help-btn" ng-click="$ctrl.clickToOpendiscrimination()">
+                <img src="source/img/elements/reference.png">
+            </div>
+            <a href="" id="discrimination" class="discrimination">- Насилие со стороны специалистов
+                <span class="active"></span>
+            </a>
         </div>
 
-        <a href="" id="discrimination" class="discrimination">- Насилие со стороны специалистов
-            <span class="active"></span>
-        </a>
     </div>
 
 

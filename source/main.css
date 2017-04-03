@@ -487,8 +487,8 @@ main .bookmark:hover {
   width: 265px;
   right: 100px;
 }
-.main-container.quiz-calc .right-block .align {
-  margin-left: 90px;
+.main-container.quiz-calc .right-block .align .help-btn {
+  margin-left: -45px;
 }
 .main-container.quiz-calc .right-block a {
   height: 56px;
@@ -546,6 +546,11 @@ main .bookmark:hover {
 }
 .main-container.quiz-calc .right-block .discrimination:hover {
   background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc help-btn.type {
+  position: absolute;
+  top: -84px;
+  left: -47px;
 }
 .main-container.quiz-calc a {
   font-family: B52, Georgia, serif;

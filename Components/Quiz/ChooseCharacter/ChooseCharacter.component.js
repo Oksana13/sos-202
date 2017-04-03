@@ -20,7 +20,7 @@
             character = event.currentTarget.id;
             SourcesService.setCharacter(character);
 
-            console.log('set: ' + character);
+            // console.log('set: ' + character);
 
         };
 
@@ -29,7 +29,7 @@
             SourcesService.getCharacter(character);
             currentCharacter = character;
 
-            console.log('get: ' + currentCharacter);
+            // console.log('get: ' + currentCharacter);
 
             return currentCharacter;
         };
