@@ -59,6 +59,10 @@
             age = $ctrl.ageRes.val;
 
             SourcesService.setAge(age);
+            SourcesService.setAgeStack(age);
+            // console.log(SourcesService.getAge());
+            // console.log(SourcesService.getAgeStack());
+
 
         };
 
@@ -75,7 +79,11 @@
 
             isolation = +social + +cognitive + +emotional;
 
-            SourcesService.setIsolation(isolation, arr);
+            SourcesService.setIsolation(isolation);
+            SourcesService.setIsolationStack(isolation, arr);
+            //
+            // console.log(SourcesService.getIsolation());
+            // console.log(SourcesService.getIsolationStack());
         };
 
 
@@ -92,8 +100,11 @@
 
             openness = +image + +family + +work;
 
-            SourcesService.setOpenness(openness, arr);
-            console.log(SourcesService.getOpenness());
+            SourcesService.setOpennessStack(openness, arr);
+            SourcesService.setOpenness(openness);
+
+            // console.log(SourcesService.getOpenness());
+            // console.log(SourcesService.getOpennessStack());
         };
 
 
@@ -117,8 +128,12 @@
             common = +nonstandard + +health + +financial + +location + +religion + +homophobia;
             // todo: rewrite count on source.service.js
 
-            SourcesService.setCommon(common, arr);
+            SourcesService.setCommon(common);
+            SourcesService.setCommonStack(common, arr);
+
             // console.log(SourcesService.getCommon());
+            // // console.log(SourcesService.getCommonStack());
+            // console.log(SourcesService.getAllStacks());
         };
 
     }

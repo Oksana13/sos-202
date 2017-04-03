@@ -5,92 +5,143 @@
         .service('SourcesService', SourcesService);
 
     function SourcesService() {
-        let $ctrl = this, character, isolation, openness, common,
+        let $ctrl = this, age, character, isolation, openness, common,
             ageStack = false,
             opennessStack = false,
             isolationStack = false,
-            commonStack = false;
+            commonStack = false,
+            allStack = false;
 
         //...Stack - checks are all inputs checked or not
-
-        // todo: check ...Stacks to continue quest
 
         angular.extend($ctrl,{
 
             getCharacter: getterSetterCharacter,
             setCharacter: getterSetterCharacter,
-            getAge: getterSetterAge,
-            setAge: getterSetterAge,
-            getIsolation: getterSetterIsolation,
-            setIsolation: getterSetterIsolation,
-            getOpenness: getterSetterOpenness,
-            setOpenness: getterSetterOpenness,
-            getCommon: getterSetterCommon,
-            setCommon: getterSetterCommon
-
         });
 
         function getterSetterCharacter(id) {
             return arguments.length ? character = id : character;
         }
 
-        function getterSetterAge(age) {
+        return {
 
-            if (age == undefined || null ) {
-                ageStack = false;
-            } else {
-                ageStack = true;
+            // age
+
+            setAge: function (value) {
+                age = value;
+                if (age == undefined || null ) {
+                    ageStack = false;
+                } else {
+                    ageStack = true;
+                    return age;
+                }
+            },
+
+            getAge: function () {
                 return age;
-            }
-        }
+            },
 
-        function getterSetterIsolation(isolation, arr) {
-            let notNullValue = true;
+            setAgeStack: function (age) {
+                if (age == undefined || null ) {
+                    ageStack = false;
+                } else {
+                    ageStack = true;
+                }
+            },
 
-            angular.forEach(arr, function (value, key) {
-                value == 0 ? notNullValue = false : true
-            });
+            getAgeStack: function () {
+                return ageStack;
+            },
 
-            notNullValue ? isolationStack = true : isolationStack = false;
+            // isolation
 
-            if (isolation.length) {
+            setIsolation: function(value) {
                 isolation = value;
-            } else {
+            },
+
+            getIsolation: function () {
                 return isolation;
-            }
+            },
 
-        }
+            setIsolationStack: function (isolation, arr) {
+                let notNullValue = true;
 
-        function getterSetterOpenness(openness, arr) {
-            let notNullValue = true;
+                angular.forEach(arr, function (value, key) {
+                    value == 0 ? notNullValue = false : true
+                });
 
-            angular.forEach(arr, function (value, key) {
-                value == 0 ? notNullValue = false : true
-            });
+                notNullValue ? isolationStack = true : isolationStack = false;
+            },
 
-            notNullValue ? opennessStack = true : opennessStack = false;
+            getIsolationStack: function () {
+                return isolationStack;
+            },
 
-            // if (openness.length) {
-            //     openness = value;
-            // } else {
-            //     return openness;
-            // }
-        }
+            // openness
 
-        function getterSetterCommon(common, arr) {
-            let notNullValue = true;
+            setOpenness: function(value) {
+                openness = value;
+            },
 
-            angular.forEach(arr, function (value, key) {
-                value == 0 ? notNullValue = false : true
-            });
+            getOpenness: function () {
+                return openness;
+            },
 
-            notNullValue ? commonStack = true : commonStack = false;
+            setOpennessStack: function (openness, arr) {
+                let notNullValue = true;
 
-            if (common.length) {
+                angular.forEach(arr, function (value, key) {
+                    value == 0 ? notNullValue = false : true
+                });
+
+                notNullValue ? opennessStack = true : opennessStack = false;
+            },
+
+            getOpennessStack: function () {
+                return opennessStack;
+            },
+
+            // common
+
+            setCommon: function(value) {
                 common = value;
-            } else {
+            },
+
+            getCommon: function () {
                 return common;
+            },
+
+            setCommonStack: function (common, arr) {
+                let notNullValue = true;
+
+                angular.forEach(arr, function (value, key) {
+                    value == 0 ? notNullValue = false : true
+                });
+
+                notNullValue ? commonStack = true : commonStack = false;
+            },
+
+            getCommonStack: function () {
+                return commonStack;
+            },
+
+            // allStacks
+
+            getAllStacks: function () {
+                let notNullValue = true,
+                    arr = [ageStack, isolationStack, opennessStack, commonStack];
+
+                angular.forEach(arr, function (value, key) {
+                    value == 0 ? notNullValue = false : true
+                });
+
+                notNullValue ? allStack = true : allStack = false;
+
+                return allStack;
+
             }
+
         }
 
     }
