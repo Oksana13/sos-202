@@ -6,7 +6,10 @@
             <img src="source/img/elements/arrow-left.png">
         </a>
 
-        <a href="#!/strategies" class="next">
+        <a href
+           ng-href="{{$ctrl.getViolenceType() == undefined ? '' : '#!/strategies'}}""
+           class="next"
+           ng-class="{true: 'disabled'}[$ctrl.getViolenceType() == undefined]">
             <img src="source/img/elements/arrow-right.png">
         </a>
     </div>
@@ -33,43 +36,73 @@
             <div class="help-btn" ng-click="$ctrl.clickToOpenHomeViolenceHelp()">
                 <img src="source/img/elements/reference.png">
             </div>
-            <a href ng-click="$ctrl.clickToOpenHomeViolence()" id="homeViolence" class="violence">- Домашнее насилие
-                <span class="active"></span>
+
+            <a href
+               ng-click="$ctrl.setViolenceType('homeViolence')"
+               id="homeViolence"
+               ng-class="$ctrl.getViolenceType() === 'homeViolence' ? 'active' : ''"
+               class="violence">- Домашнее насилие
             </a>
+
 
             <div class="help-btn" ng-click="$ctrl.clickToOpenPartnerViolenceHelp()">
                 <img src="source/img/elements/reference.png">
             </div>
-            <a href ng-click="$ctrl.clickToOpenPartnerViolence()" id="PartnerViolence" class="violence">- Партнерское насилие
-                <span class="active"></span>
+
+            <a href
+               ng-click="$ctrl.setViolenceType('PartnerViolence')"
+               id="PartnerViolence"
+               ng-class="$ctrl.getViolenceType() === 'PartnerViolence' ? 'active' : ''"
+               class="violence">- Партнерское насилие
             </a>
+
 
             <div class="help-btn" ng-click="$ctrl.clickToOpenStalkingHelp()">
                 <img src="source/img/elements/reference.png">
             </div>
-            <a href ng-click="$ctrl.clickToOpenStalking()" id="stulking" class="stulking">- Сталкинг
-                <span class="active"></span>
+
+            <a href
+               ng-click="$ctrl.setViolenceType('stulking')"
+               id="stulking"
+               ng-class="$ctrl.getViolenceType() === 'stulking' ? 'active' : ''"
+               class="stulking">- Сталкинг
             </a>
+
 
             <div class="help-btn" ng-click="$ctrl.clickToOpenCilHelp()">
                 <img src="source/img/elements/reference.png">
             </div>
-            <a href ng-click="$ctrl.clickToOpenCil()" id="cil" class="cil">- Корректирующее изнасилование
-                <span class="active"></span>
+
+            <a href
+               ng-click="$ctrl.setViolenceType('cil')"
+               id="cil"
+               ng-class="$ctrl.getViolenceType() === 'cil' ? 'active' : ''"
+               class="cil">- Корректирующее изнасилование
             </a>
+
 
             <div class="help-btn" ng-click="$ctrl.clickToOpenBullingHelp()">
                 <img src="source/img/elements/reference.png">
             </div>
-            <a href ng-click="$ctrl.clickToOpenBulling()" id="bulling" class="bulling">- Буллинг
-                <span class="active"></span>
+
+            <a href
+               ng-click="$ctrl.setViolenceType('bulling')"
+               id="bulling"
+               ng-class="$ctrl.getViolenceType() === 'bulling' ? 'active' : ''"
+               class="bulling">- Буллинг
             </a>
+
 
             <div class="help-btn" ng-click="$ctrl.clickToOpenDiscriminationHelp()">
                 <img src="source/img/elements/reference.png">
             </div>
-            <a href ng-click="$ctrl.clickToOpenDiscrimination()" id="discrimination" class="discrimination">- Насилие со стороны специалистов
-                <span class="active"></span>
+
+            <a href
+               ng-click="$ctrl.setViolenceType('discrimination')"
+               id="discrimination"
+               ng-class="$ctrl.getViolenceType() === 'discrimination' ? 'active' : ''"
+               class="discrimination">- Насилие со стороны специалистов
+                
             </a>
         </div>
 

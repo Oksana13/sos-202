@@ -65,8 +65,6 @@
                 isolation = 'high'
             }
 
-            console.log(isolation);
-
             ngDialog.open({
                 controller: 'Popup',
                 template: 'Data/Templates-Resource-Types/tpl-resource-isolation-' + isolation + '.html'
@@ -84,8 +82,6 @@
                 common = 'low'
             }
 
-            console.log(common);
-
             ngDialog.open({
                 controller: 'Popup',
                 template: 'Data/Templates-Resource-Types/tpl-resource-openness-' + common + '.html'
@@ -95,59 +91,13 @@
 
         // Violence types
 
-        $ctrl.character = function () {
-            return SourcesService.getCharacter();
+
+        $ctrl.setViolenceType = function (val) {
+            SourcesService.setViolenceType(val) ;
         };
 
-
-        $ctrl.clickToOpenHomeViolence = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
-            });
-        };
-
-        $ctrl.clickToOpenPartnerViolence = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-PartnerViolence.html'
-            });
-        };
-
-        $ctrl.clickToOpenStalking = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-stulking.html'
-            });
-        };
-
-        $ctrl.clickToOpenCil = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-cil.html'
-            });
-        };
-
-        $ctrl.clickToOpenBulling = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-bulling.html'
-            });
-        };
-
-        $ctrl.clickToOpenDiscrimination = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-discrimination.html'
-            });
-        };
-
-
-        $ctrl.clickToOpenType = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
-            });
+        $ctrl.getViolenceType = function () {
+            return SourcesService.getViolenceType() ;
         };
 
         // Help buttons for Violence types

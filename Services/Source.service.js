@@ -5,7 +5,7 @@
         .service('SourcesService', SourcesService);
 
     function SourcesService($rootScope) {
-        let $ctrl = this, age, character, isolation, openness, common,
+        let $ctrl = this, age, character = 'girl', isolation, openness, common, type,
             ageStack = false,
             opennessStack = false,
             isolationStack = false,
@@ -149,11 +149,15 @@
 
             updatedAllStacks: function () {
                 $rootScope.$emit(' updatedAllStacks', allStack);
-            }
+            },
 
-            // updateAge: function () {
-            //     $rootScope.$emit('updateAge', age);
-            // }
+            setViolenceType: function (val) {
+                type = val;
+            },
+
+            getViolenceType: function () {
+                return type;
+            }
 
         }
 

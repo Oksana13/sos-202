@@ -10,61 +10,46 @@
         .controller('strategies', strategies);
 
 
-    function strategies (ngDialog, $http, SourcesService){
-        let $ctrl = this;
+    function strategies (ngDialog, SourcesService){
+        let $ctrl = this,
+        character,
+        type;
+
+        character = SourcesService.getCharacter();
+
+        type = SourcesService.getViolenceType();
+
+        console.log(character);
+        console.log(type);
+
 
         $ctrl.clickToOpenSurvival = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-girl-homeViolence.html'
+                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
             });
         };
 
         $ctrl.clickToOpenCoping = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-girl-homeViolence.html'
+                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
             });
         };
 
         $ctrl.clickToOpenResistance = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-girl-homeViolence.html'
+                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
             });
         };
 
         $ctrl.clickToOpenMutualAid = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-girl-homeViolence.html'
+                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
             });
         };
-
-
-
-        $ctrl.character = function () {
-            return SourcesService.getCharacter();
-        };
-
-        console.log($ctrl.character());
-
-
-
-
-        $http.get('Data/Violence-type.json')
-            .then(function (response) {
-                    $ctrl.result = response.data;
-
-                    console.log($ctrl.result);
-
-                },
-                function (errResponse) {
-                    console.log(errResponse);
-                });
-
-
-
 
     }
 })();

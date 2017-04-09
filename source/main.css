@@ -558,16 +558,6 @@ main .bookmark:hover {
   padding-left: 20px;
   color: #000;
 }
-.main-container.quiz-calc .right-block a .active {
-  width: 33px;
-  height: 36px;
-  display: block;
-  position: absolute;
-  left: -40px;
-  top: 10px;
-  background: url(img/quiz/type-of-violence/active.png) no-repeat 0px top;
-  display: none;
-}
 .main-container.quiz-calc .right-block .cil {
   width: 300px;
   height: 75px;
@@ -576,10 +566,16 @@ main .bookmark:hover {
 .main-container.quiz-calc .right-block .cil:hover {
   background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
 }
+.main-container.quiz-calc .right-block .cil.active {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+}
 .main-container.quiz-calc .right-block .bulling {
   width: 233px;
 }
 .main-container.quiz-calc .right-block .bulling:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .bulling.active {
   background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
 }
 .main-container.quiz-calc .right-block .stulking {
@@ -588,10 +584,16 @@ main .bookmark:hover {
 .main-container.quiz-calc .right-block .stulking:hover {
   background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
 }
+.main-container.quiz-calc .right-block .stulking.active {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
 .main-container.quiz-calc .right-block .speech {
   width: 233px;
 }
 .main-container.quiz-calc .right-block .speech:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .speech.active {
   background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
 }
 .main-container.quiz-calc .right-block .violence {
@@ -601,12 +603,18 @@ main .bookmark:hover {
 .main-container.quiz-calc .right-block .violence:hover {
   background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
 }
+.main-container.quiz-calc .right-block .violence.active {
+  background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+}
 .main-container.quiz-calc .right-block .discrimination {
   width: 321px;
   height: 75px;
   line-height: 27px;
 }
 .main-container.quiz-calc .right-block .discrimination:hover {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+}
+.main-container.quiz-calc .right-block .discrimination.active {
   background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
 }
 .main-container.quiz-calc help-btn.type {
