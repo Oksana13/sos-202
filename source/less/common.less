@@ -14,8 +14,7 @@ html, body {
 
 p, span, ul, ol {
     font-family: Cambria, Georgia, serif;
-    font-size: 20px;
-
+    font-size: 16px;
 }
 
 .hidden {
@@ -156,7 +155,7 @@ main {
 }
 
 .popup-content {
-    height: 510px;
+    height: 490px;
     overflow-y: scroll;
     padding-right: 20px;
 
@@ -172,6 +171,24 @@ main {
     &::-webkit-scrollbar-track {
         background: #ddd;
         border-radius: 20px;
+    }
+
+    p {
+        text-indent: 20px;
+    }
+
+    ul {
+        &.nav {
+            position: absolute;
+            bottom: 44px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 182px;
+            border-bottom: none;
+
+
+        }
     }
 }
 

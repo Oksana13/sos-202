@@ -14,7 +14,7 @@ span,
 ul,
 ol {
   font-family: Cambria, Georgia, serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 .hidden {
   display: none;
@@ -137,7 +137,7 @@ main .bookmark:hover {
   box-sizing: border-box;
 }
 .popup-content {
-  height: 510px;
+  height: 490px;
   overflow-y: scroll;
   padding-right: 20px;
 }
@@ -151,6 +151,18 @@ main .bookmark:hover {
 .popup-content::-webkit-scrollbar-track {
   background: #ddd;
   border-radius: 20px;
+}
+.popup-content p {
+  text-indent: 20px;
+}
+.popup-content ul.nav {
+  position: absolute;
+  bottom: 44px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 182px;
+  border-bottom: none;
 }
 .ngdialog-close {
   width: 39px;
@@ -386,6 +398,10 @@ main .bookmark:hover {
 }
 .main-container.quiz-sources .right-block span {
   max-width: 190px;
+}
+.main-container.quiz-sources .options {
+  display: inline-block;
+  float: right;
 }
 .main-container.quiz-sources .resource-type {
   position: relative;

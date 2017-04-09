@@ -19,7 +19,9 @@
     "angular-route": "latest",
     "angular-loader": "latest",
     "ngDialog": "latest",
-    "angular-bootstrap": "latest"
+    "angular-bootstrap": "latest",
+    "bootstrap": "^3.3.7",
+    "angular-animate": "^1.6.4"
   },
   "ignore": [
     "**/.*",
