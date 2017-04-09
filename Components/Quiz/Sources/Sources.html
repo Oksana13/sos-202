@@ -11,7 +11,7 @@
         </a>
     </div>
 
-    <div class="help-btn resources-about" ng-click="$ctrl.clickToOpen()">
+    <div class="help-btn resources-about" ng-click="$ctrl.clickToOpenAbout()">
         <img src="source/img/elements/reference.png">
     </div>
 
@@ -41,7 +41,7 @@
             <titlebg></titlebg>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenSocial()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Социальная</span>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenCognitive()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Когнитивная</span>
@@ -75,7 +75,7 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenEmotional()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Эмоциональная</span>
@@ -99,7 +99,7 @@
             <titlebg></titlebg>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenImage()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Имидж</span>
@@ -116,7 +116,7 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenFamilies()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Каминаут в семье</span>
@@ -133,10 +133,10 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenWorks()">
                     <img src="source/img/elements/reference.png">
                 </div>
-                <span>Каминаут в коллективе</span>
+                <span>Каминаут в группе</span>
                 <div class="options">
                     <label ng-repeat="work in $ctrl.works" for="{{work}}">
                         <input  type="radio"
@@ -162,10 +162,44 @@
             <titlebg></titlebg>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenLocations()">
                     <img src="source/img/elements/reference.png">
                 </div>
-                <span>Нейронормативность/ненормативность</span>
+                <span>Безопасность дома</span>
+                <div class="options">
+                    <label ng-repeat="location in $ctrl.locations" for="{{location}}">
+                        <input  type="radio"
+                                ng-model="$ctrl.locationRes.val"
+                                ng-value="location"
+                                ng-change="$ctrl.checkCommon()"
+                                id="{{location}}"
+                                name="location">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenHomophobias()">
+                    <img src="source/img/elements/reference.png">
+                </div>
+                <span>Принятие себя</span>
+                <div class="options">
+                    <label ng-repeat="homophobia in $ctrl.homophobias" for="{{homophobia}}">
+                        <input  type="radio"
+                                ng-model="$ctrl.homophobiaRes.val"
+                                ng-value="homophobia"
+                                ng-change="$ctrl.checkCommon()"
+                                id="{{homophobia}}"
+                                name="homophobia">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenNonstandards()">
+                    <img src="source/img/elements/reference.png">
+                </div>
+                <span>Нейронормативность</span>
                 <div class="options">
                     <label ng-repeat="nonstandard in $ctrl.nonstandards" for="{{nonstandard}}">
                         <input  type="radio"
@@ -179,7 +213,7 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenHealths()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Здоровье</span>
@@ -196,41 +230,7 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
-                    <img src="source/img/elements/reference.png">
-                </div>
-                <span>Материальная независимость</span>
-                <div class="options">
-                    <label ng-repeat="financial in $ctrl.financials" for="{{financial}}">
-                        <input  type="radio"
-                                ng-model="$ctrl.financialRes.val"
-                                ng-value="financial"
-                                ng-change="$ctrl.checkCommon()"
-                                id="{{financial}}"
-                                name="financial">
-                    </label>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
-                    <img src="source/img/elements/reference.png">
-                </div>
-                <span>Место жительства</span>
-                <div class="options">
-                    <label ng-repeat="location in $ctrl.locations" for="{{location}}">
-                        <input  type="radio"
-                                ng-model="$ctrl.locationRes.val"
-                                ng-value="location"
-                                ng-change="$ctrl.checkCommon()"
-                                id="{{location}}"
-                                name="location">
-                    </label>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenReligions()">
                     <img src="source/img/elements/reference.png">
                 </div>
                 <span>Этнорелигиозная принадлежность</span>
@@ -247,18 +247,18 @@
             </div>
 
             <div class="row">
-                <div class="help-btn" ng-click="$ctrl.clickToOpen()">
+                <div class="help-btn" ng-click="$ctrl.clickToOpenFinancial()">
                     <img src="source/img/elements/reference.png">
                 </div>
-                <span>Внутренняя гомофобия</span>
+                <span>Материальная обеспеченность</span>
                 <div class="options">
-                    <label ng-repeat="homophobia in $ctrl.homophobias" for="{{homophobia}}">
+                    <label ng-repeat="financial in $ctrl.financials" for="{{financial}}">
                         <input  type="radio"
-                                ng-model="$ctrl.homophobiaRes.val"
-                                ng-value="homophobia"
+                                ng-model="$ctrl.financialRes.val"
+                                ng-value="financial"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{homophobia}}"
-                                name="homophobia">
+                                id="{{financial}}"
+                                name="financial">
                     </label>
                 </div>
             </div>
