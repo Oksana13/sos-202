@@ -128,5 +128,56 @@
             });
         };
 
+        // Help buttons for Violence types
+
+
+        $ctrl.clickToOpenHomeViolenceHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Насилие со стороны со стороны родителей или других взрослых родственников, жестокое обращение с детьми</div>'
+            });
+        };
+
+        $ctrl.clickToOpenPartnerViolenceHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Насилие со стороны партнеров по браку (официальному или гражданскому) или по романтическим отношениям</div>'
+            });
+        };
+
+        $ctrl.clickToOpenStalkingHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Навязчивое нежелательное внимание или преследование  </div>'
+            });
+        };
+
+        $ctrl.clickToOpenCilHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Изнасилование, совершаемое в связи с (предполагаемой) сексуальной ориентацией и/или гендерной идентичностью человека.</div>'
+            });
+        };
+
+        $ctrl.clickToOpenBullingHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Травля со стороны участника/участников группы по отношению к другому участнику/участникам той же группы</div>'
+            });
+        };
+
+        $ctrl.clickToOpenDiscriminationHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Насилие, осуществляемое представителями помогающих профессий (врачами, психологами, психотерапевтами, социальными работниками), а также педагогами и общинными лидерами</div>'
+            });
+        };
+
     }
 })();

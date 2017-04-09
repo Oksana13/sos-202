@@ -205,6 +205,7 @@ main .bookmark:hover {
   font-size: 29px;
   margin: 40px 0;
   padding-left: 15px;
+  padding-top: 0;
 }
 .main-screen .left-block .btn:hover {
   background: url(img/elements/btn-hover.png);
@@ -485,7 +486,7 @@ main .bookmark:hover {
   background: url(img/quiz/type-of-violence/type-of-violence-bg.png) no-repeat;
 }
 .main-container.quiz-calc .left-block {
-  left: 90px;
+  left: 107px;
   top: 177px;
 }
 .main-container.quiz-calc .left-block a {
@@ -493,6 +494,10 @@ main .bookmark:hover {
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  color: #000;
+}
+.main-container.quiz-calc .left-block a:hover {
+  text-decoration: none;
 }
 .main-container.quiz-calc .left-block .row:nth-child(2) {
   margin-top: 50px;
