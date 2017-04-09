@@ -13,69 +13,91 @@
     function calculation(ngDialog, SourcesService, $rootScope, $scope){
         let $ctrl = this;
 
+        // Resource types
+
         $ctrl.clickToOpenSex = function() {
             ngDialog.open({
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html',
+                template: 'Data/Templates-Resource-Types/tpl-resource-sex.html',
                 controller: 'Popup'
             });
         };
 
 
         $ctrl.clickToOpenAge = function() {
+            let age;
 
-
+            (SourcesService.getAge()) ? age = 'less' : age = 'more';
 
             ngDialog.open({
-                plain: true,
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
+                template: 'Data/Templates-Resource-Types/tpl-resource-age-18-' +  age +'.html'
             });
         };
 
-        // $rootScope.$on(' updateAge', function () {
-        //     $ctrl.age = function () {
-        //         return SourcesService.getAge();
-        //     };
-        //
-        //     console.log($ctrl.age);
-        // });
 
-        // $ctrl.clickToOpenOrientation = function() {
-        //     ngDialog.open({
-        //         controller: 'Popup',
-        //         template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
-        //     });
-        // };
-        //
-        // $ctrl.clickToOpenOpenness = function() {
-        //     ngDialog.open({
-        //         controller: 'Popup',
-        //         template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
-        //     });
-        // };
-        //
-        // $ctrl.clickToOpenIsolation = function() {
-        //     ngDialog.open({
-        //         controller: 'Popup',
-        //         template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
-        //     });
-        // };
-        //
-        // $ctrl.clickToOpenCommon = function() {
-        //     ngDialog.open({
-        //         controller: 'Popup',
-        //         template: 'Data/Templates-Violence-Type/tpl-' + $ctrl.character() + '-homeViolence.html'
-        //     });
-        // };
+        $ctrl.clickToOpenOpenness = function() {
+            let openness;
+
+            if (SourcesService.getOpenness() < 6) {
+                openness = 'low'
+            } else if (SourcesService.getOpenness() > 5 && SourcesService.getOpenness() < 10) {
+                openness = 'mid'
+            } else if (SourcesService.getOpenness() > 9) {
+                openness = 'high'
+            }
+
+            console.log(openness);
+
+            ngDialog.open({
+                controller: 'Popup',
+                template: 'Data/Templates-Resource-Types/tpl-resource-openness-' + openness + '.html'
+            });
+        };
+
+        $ctrl.clickToOpenIsolation = function() {
+            let isolation;
+
+            if (SourcesService.getIsolation() < 6) {
+                isolation = 'low'
+            } else if (SourcesService.getIsolation() > 5 && SourcesService.getIsolation() < 10) {
+                isolation = 'mid'
+            } else if (SourcesService.getIsolation() > 9) {
+                isolation = 'high'
+            }
+
+            console.log(isolation);
+
+            ngDialog.open({
+                controller: 'Popup',
+                template: 'Data/Templates-Resource-Types/tpl-resource-isolation-' + isolation + '.html'
+            });
+        };
+
+        $ctrl.clickToOpenCommon = function() {
+            let common;
+
+            if (SourcesService.getCommon() < 10) {
+                common = 'high'
+            } else if (SourcesService.getCommon() > 9 && SourcesService.getCommon() < 19) {
+                common = 'mid'
+            } else if (SourcesService.getCommon() > 18) {
+                common = 'low'
+            }
+
+            console.log(common);
+
+            ngDialog.open({
+                controller: 'Popup',
+                template: 'Data/Templates-Resource-Types/tpl-resource-openness-' + common + '.html'
+            });
+        };
+
 
         // Violence types
 
         $ctrl.character = function () {
             return SourcesService.getCharacter();
         };
-
-        console.log($ctrl.character());
-
 
 
         $ctrl.clickToOpenHomeViolence = function() {
