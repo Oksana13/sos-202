@@ -50,14 +50,15 @@ main .container {
   position: relative;
 }
 main .bookmark {
-  width: 52px;
-  height: 87px;
+  width: 230px;
+  height: 50px;
   position: absolute;
   right: 75px;
-  top: -8px;
+  top: 5px;
+  background: url(img/quiz/violence-type-btn.png) no-repeat center center;
 }
 main .bookmark:hover {
-  background: url(img/quiz/type-of-violence/bookmark-hover.png) no-repeat center center;
+  background: url(img/quiz/violence-type-btn-hover.png) no-repeat center center;
 }
 .main-container {
   width: 847px;
@@ -132,7 +133,8 @@ main .bookmark:hover {
   margin: auto;
   position: relative;
   background: url(img/modal-bg-start-page.png);
-  padding: 50px 45px 100px 50px;
+  background-size: cover;
+  padding: 50px 20px 100px 70px;
   margin-top: 25px;
   box-sizing: border-box;
 }
@@ -629,6 +631,7 @@ main .bookmark:hover {
   padding-top: 5px;
 }
 .main-container.quiz-strategies {
+  width: 875px;
   background: url(img/quiz/strategies/girl-bg.png) no-repeat;
 }
 .main-container.quiz-strategies .left-block {
@@ -647,7 +650,7 @@ main .bookmark:hover {
   background: url(img/quiz/strategies/helper-bg.png) no-repeat;
 }
 .main-container.quiz-strategies .next {
-  right: -35px;
+  right: -10px;
 }
 .main-container.quiz-strategies .strategy-btn {
   display: block;

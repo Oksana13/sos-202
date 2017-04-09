@@ -5,7 +5,7 @@
         .service('SourcesService', SourcesService);
 
     function SourcesService($rootScope) {
-        let $ctrl = this, age, character = 'girl', isolation, openness, common, type,
+        let $ctrl = this, age, character, isolation, openness, common, type,
             ageStack = false,
             opennessStack = false,
             isolationStack = false,

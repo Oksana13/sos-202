@@ -17,7 +17,19 @@
 
         character = SourcesService.getCharacter();
 
+        $ctrl.character = function () {
+          return SourcesService.getCharacter();
+        };
+
         type = SourcesService.getViolenceType();
+
+        if (character === undefined) {
+            character = 'girl'
+        }
+
+        if (type === undefined) {
+            type = 'homeViolence'
+        }
 
         console.log(character);
         console.log(type);
