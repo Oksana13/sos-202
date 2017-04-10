@@ -46,13 +46,14 @@
                 </div>
                 <span>Социальная</span>
                 <div class="options">
-                    <label ng-repeat="social in $ctrl.socials" for="{{social}}">
+                    <label ng-repeat="social in $ctrl.socials" for="social{{social}}">
                         <input  type="radio"
                                 ng-model="$ctrl.socialRes.val"
                                 ng-value="social"
                                 ng-change="$ctrl.checkIsolation()"
-                                id="{{social}}"
+                                id="social{{social}}"
                                 name="social">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -63,13 +64,14 @@
                 </div>
                 <span>Когнитивная</span>
                 <div class="options">
-                    <label ng-repeat="cognitive in $ctrl.cognitives" for="{{cognitive}}">
+                    <label ng-repeat="cognitive in $ctrl.cognitives" for="cognitive{{cognitive}}">
                         <input  type="radio"
                                 ng-model="$ctrl.cognitiveRes.val"
                                 ng-value="cognitive"
                                 ng-change="$ctrl.checkIsolation()"
-                                id="{{cognitive}}"
+                                id="cognitive{{cognitive}}"
                                 name="cognitive">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -80,13 +82,14 @@
                 </div>
                 <span>Эмоциональная</span>
                 <div class="options">
-                    <label ng-repeat="emotional in $ctrl.emotionals" for="{{emotional}}">
+                    <label ng-repeat="emotional in $ctrl.emotionals" for="emotional{{emotional}}">
                         <input  type="radio"
                                 ng-model="$ctrl.emotionalRes.val"
                                 ng-value="emotional"
                                 ng-change="$ctrl.checkIsolation()"
-                                id="{{emotional}}"
+                                id="emotional{{emotional}}"
                                 name="emotional">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -104,13 +107,14 @@
                 </div>
                 <span>Имидж</span>
                 <div class="options">
-                    <label ng-repeat="image in $ctrl.images" for="{{image}}">
+                    <label ng-repeat="image in $ctrl.images" for="image{{image}}">
                         <input  type="radio"
                                 ng-model="$ctrl.imageRes.val"
                                 ng-value="image"
                                 ng-change="$ctrl.checkOpenness()"
-                                id="{{image}}"
+                                id="image{{image}}"
                                 name="image">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -121,13 +125,14 @@
                 </div>
                 <span>Каминаут в семье</span>
                 <div class="options">
-                    <label ng-repeat="family in $ctrl.families" for="{{family}}">
+                    <label ng-repeat="family in $ctrl.families" for="family{{family}}">
                         <input  type="radio"
                                 ng-model="$ctrl.familyRes.val"
                                 ng-value="family"
                                 ng-change="$ctrl.checkOpenness()"
-                                id="{{family}}"
+                                id="family{{family}}"
                                 name="family">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -138,13 +143,14 @@
                 </div>
                 <span>Каминаут в группе</span>
                 <div class="options">
-                    <label ng-repeat="work in $ctrl.works" for="{{work}}">
+                    <label ng-repeat="work in $ctrl.works" for="work{{work}}">
                         <input  type="radio"
                                 ng-model="$ctrl.workRes.val"
                                 ng-value="work"
                                 ng-change="$ctrl.checkOpenness()"
-                                id="{{work}}"
+                                id="work{{work}}"
                                 name="work">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -167,13 +173,14 @@
                 </div>
                 <span>Безопасность дома</span>
                 <div class="options">
-                    <label ng-repeat="location in $ctrl.locations" for="{{location}}">
+                    <label ng-repeat="location in $ctrl.locations" for="location{{location}}">
                         <input  type="radio"
                                 ng-model="$ctrl.locationRes.val"
                                 ng-value="location"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{location}}"
+                                id="location{{location}}"
                                 name="location">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -184,13 +191,14 @@
                 </div>
                 <span>Принятие себя</span>
                 <div class="options">
-                    <label ng-repeat="homophobia in $ctrl.homophobias" for="{{homophobia}}">
+                    <label ng-repeat="homophobia in $ctrl.homophobias" for="homophobia{{homophobia}}">
                         <input  type="radio"
                                 ng-model="$ctrl.homophobiaRes.val"
                                 ng-value="homophobia"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{homophobia}}"
+                                id="homophobia{{homophobia}}"
                                 name="homophobia">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -201,13 +209,14 @@
                 </div>
                 <span>Нейронормативность</span>
                 <div class="options">
-                    <label ng-repeat="nonstandard in $ctrl.nonstandards" for="{{nonstandard}}">
+                    <label ng-repeat="nonstandard in $ctrl.nonstandards" for="nonstandard{{nonstandard}}">
                         <input  type="radio"
                                 ng-model="$ctrl.nonstandardRes.val"
                                 ng-value="nonstandard"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{nonstandard}}"
+                                id="nonstandard{{nonstandard}}"
                                 name="nonstandard">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -218,13 +227,14 @@
                 </div>
                 <span>Здоровье</span>
                 <div class="options">
-                    <label ng-repeat="health in $ctrl.healths" for="{{health}}">
+                    <label ng-repeat="health in $ctrl.healths" for="health{{health}}">
                         <input  type="radio"
                                 ng-model="$ctrl.healthRes.val"
                                 ng-value="health"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{health}}"
+                                id="health{{health}}"
                                 name="health">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -235,13 +245,14 @@
                 </div>
                 <span>Этнорелигиозная принадлежность</span>
                 <div class="options">
-                    <label ng-repeat="religion in $ctrl.religions" for="{{religion}}">
+                    <label ng-repeat="religion in $ctrl.religions" for="religion{{religion}}">
                         <input  type="radio"
                                 ng-model="$ctrl.religionRes.val"
                                 ng-value="religion"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{religion}}"
+                                id="religion{{religion}}"
                                 name="religion">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>
@@ -252,13 +263,14 @@
                 </div>
                 <span>Материальная обеспеченность</span>
                 <div class="options">
-                    <label ng-repeat="financial in $ctrl.financials" for="{{financial}}">
+                    <label ng-repeat="financial in $ctrl.financials" for="financial{{financial}}">
                         <input  type="radio"
                                 ng-model="$ctrl.financialRes.val"
                                 ng-value="financial"
                                 ng-change="$ctrl.checkCommon()"
-                                id="{{financial}}"
+                                id="financial{{financial}}"
                                 name="financial">
+                        <div class="control__indicator"></div>
                     </label>
                 </div>
             </div>

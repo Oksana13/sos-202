@@ -17,7 +17,7 @@
             ngDialog.open({
                 appendTo: '.main-screen',
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-girl-homeViolence.html'
+                template: 'Data/Template-Main-Page.html'
             });
         };
 

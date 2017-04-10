@@ -54,7 +54,7 @@ main .bookmark {
   height: 50px;
   position: absolute;
   right: 75px;
-  top: 5px;
+  top: 10px;
   background: url(img/quiz/violence-type-btn.png) no-repeat center center;
 }
 main .bookmark:hover {
@@ -134,7 +134,7 @@ main .bookmark:hover {
   position: relative;
   background: url(img/modal-bg-start-page.png);
   background-size: cover;
-  padding: 50px 20px 100px 70px;
+  padding: 50px 20px 100px 90px;
   margin-top: 25px;
   box-sizing: border-box;
 }
@@ -173,7 +173,7 @@ main .bookmark:hover {
   cursor: pointer;
   background: url(img/elements/close-btn.png) no-repeat;
   bottom: 35px;
-  left: 25px;
+  left: 65px;
 }
 .ngdialog-close:hover {
   background: url(img/elements/close-btn-hover.png);
@@ -376,22 +376,41 @@ main .bookmark:hover {
 .main-container.quiz-sources {
   background: url(img/quiz/sources/sources-bg.png) no-repeat;
 }
+.main-container.quiz-sources input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.main-container.quiz-sources .control__indicator {
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #e6e6e6;
+  border-radius: 50%;
+}
+.main-container.quiz-sources input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.main-container.quiz-sources label {
+  cursor: pointer;
+}
 .main-container.quiz-sources .resources-about {
   left: 380px;
   top: 60px;
 }
 .main-container.quiz-sources .left-block {
-  width: 265px;
+  width: 210px;
   top: 120px;
-  left: 130px;
+  left: 155px;
 }
 .main-container.quiz-sources .left-block span {
   max-width: 165px;
 }
 .main-container.quiz-sources .right-block {
-  width: 320px;
+  width: 250px;
   top: 50px;
-  right: 54px;
+  right: 100px;
 }
 .main-container.quiz-sources .right-block .resource-type .row {
   height: 80px;
@@ -427,11 +446,13 @@ main .bookmark:hover {
   font-family: B52, Georgia, serif;
   font-size: 22px;
   padding: 9px 10px 0;
+  margin-left: -12px;
+  margin-bottom: 30px;
 }
 .main-container.quiz-sources titlebg {
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -75px;
 }
 .main-container.quiz-sources titlebg svg {
   width: 215px;
@@ -439,8 +460,10 @@ main .bookmark:hover {
 }
 .main-container.quiz-sources .age .options {
   position: absolute;
-  right: 30px;
+  right: -6px;
   top: 0;
+  background: none;
+  width: auto;
 }
 .main-container.quiz-sources .age .options input {
   display: none;
@@ -458,7 +481,7 @@ main .bookmark:hover {
   font-size: 22px;
   line-height: 48px;
   box-sizing: border-box;
-  padding-left: 5px;
+  padding-left: 13px;
   margin-left: 5px;
   cursor: pointer;
 }
@@ -635,7 +658,16 @@ main .bookmark:hover {
   background: url(img/quiz/strategies/girl-bg.png) no-repeat;
 }
 .main-container.quiz-strategies .left-block {
-  left: 110px;
+  left: 100px;
+}
+.main-container.quiz-strategies .title {
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+  transform: rotate(94deg);
+  right: -157px;
+  position: absolute;
+  top: 184px;
+  width: 280px;
 }
 .main-container.quiz-strategies.girl {
   background: url(img/quiz/strategies/girl-bg.png) no-repeat;
@@ -651,6 +683,10 @@ main .bookmark:hover {
 }
 .main-container.quiz-strategies .next {
   right: -10px;
+}
+.main-container.quiz-strategies .help-btn {
+  right: -40px;
+  margin-top: 10px;
 }
 .main-container.quiz-strategies .strategy-btn {
   display: block;

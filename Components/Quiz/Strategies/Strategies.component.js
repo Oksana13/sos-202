@@ -31,10 +31,6 @@
             type = 'homeViolence'
         }
 
-        console.log(character);
-        console.log(type);
-
-
         $ctrl.clickToOpenSurvival = function() {
             ngDialog.open({
                 controller: 'Popup',
@@ -60,6 +56,40 @@
             ngDialog.open({
                 controller: 'Popup',
                 template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
+            });
+        };
+
+        // Help buttons
+
+        $ctrl.clickToOpenSurvivalHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Как оказать себе или своим близким первую помощь?</div>'
+            });
+        };
+
+        $ctrl.clickToOpenCopingHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Как мы справляемся со стрессом?</div>'
+            });
+        };
+
+        $ctrl.clickToOpenResistanceHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Как мы защищаем себя или своих близких?</div>'
+            });
+        };
+
+        $ctrl.clickToOpenMutualAidHelp = function() {
+            ngDialog.open({
+                plain: true,
+                controller: 'Popup',
+                template: '<div class="popup-content">Как мы поддерживаем друг друга в формате «равный — равному»?</div>'
             });
         };
 
