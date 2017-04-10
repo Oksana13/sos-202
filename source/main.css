@@ -59,7 +59,7 @@ main .bookmark {
   width: 230px;
   height: 50px;
   position: absolute;
-  right: 75px;
+  right: 85px;
   top: 10px;
   background: url(img/quiz/violence-type-btn.png) no-repeat center center;
 }
@@ -210,7 +210,7 @@ main .bookmark:hover {
   background: url(img/bg-start-page.png);
 }
 .main-screen .left-block .btn {
-  width: 195px;
+  width: 215px;
   min-height: 52px;
   display: block;
   font-size: 29px;
@@ -607,7 +607,8 @@ main .bookmark:hover {
   color: #000;
 }
 .main-container.quiz-calc .right-block .cil {
-  width: 300px;
+  width: 326px;
+  padding-right: 11px;
   height: 75px;
   line-height: 27px;
 }
