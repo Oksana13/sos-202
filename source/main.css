@@ -274,7 +274,122 @@ main .bookmark:hover {
   font-family: B52;
 }
 .main-container.reminders {
+  width: 892px;
   background: url(img/memos/bg-memo.png) no-repeat;
+}
+.main-container.reminders .home-btn {
+  top: 143px;
+  left: 4px;
+}
+.main-container.reminders .help-btn {
+  left: 395px;
+  top: 190px;
+  z-index: 100;
+}
+.main-container.reminders .btn {
+  width: 212px;
+  height: 52px;
+  font-size: 22px;
+  text-align: center;
+  bottom: 15px;
+  position: absolute;
+  left: 68px;
+}
+.main-container.reminders .btn:hover {
+  background: url(img/elements/btn-hover.png);
+}
+.main-container.reminders .opened-letter {
+  width: 377px;
+  height: 431px;
+  background: url(img/memos/open-letter.png);
+  position: absolute;
+  left: -28px;
+  bottom: -17px;
+}
+.main-container.reminders .left-block {
+  width: 336px;
+  height: 400px;
+  left: 100px;
+}
+.main-container.reminders .right-block {
+  width: 412px;
+  height: 523px;
+  top: 70px;
+  right: 0;
+  background: url(img/memos/memo-open-bg.png);
+  padding-left: 33px;
+  padding-top: 128px;
+}
+.main-container.reminders .right-block a {
+  height: 56px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding-left: 20px;
+  color: #000;
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+  padding-top: 7px;
+}
+.main-container.reminders .right-block .cil {
+  width: 326px;
+  padding-right: 11px;
+  height: 75px;
+  line-height: 27px;
+}
+.main-container.reminders .right-block .cil:hover {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .cil.active {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .bulling {
+  width: 233px;
+}
+.main-container.reminders .right-block .bulling:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .bulling.active {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .stulking {
+  width: 233px;
+}
+.main-container.reminders .right-block .stulking:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .stulking.active {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .speech {
+  width: 233px;
+}
+.main-container.reminders .right-block .speech:hover {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .speech.active {
+  background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .violence {
+  width: 322px;
+  height: 56px;
+}
+.main-container.reminders .right-block .violence:hover {
+  background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .violence.active {
+  background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .discrimination {
+  width: 321px;
+  height: 75px;
+  line-height: 27px;
+}
+.main-container.reminders .right-block .discrimination:hover {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+}
+.main-container.reminders .right-block .discrimination.active {
+  background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
 }
 .main-container.quiz-start {
   background: url(img/quiz/start-screen/start-bg.png) no-repeat;

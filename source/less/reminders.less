@@ -1,5 +1,146 @@
 .main-container {
     &.reminders {
+        width: 892px;
         background: url(img/memos/bg-memo.png) no-repeat;
+
+        .home-btn {
+            top: 143px;
+            left: 4px;
+        }
+
+        .help-btn {
+            left: 395px;
+            top: 190px;
+            z-index: 100;
+        }
+
+        .btn {
+            width: 212px;
+            height: 52px;
+            font-size: 22px;
+            text-align: center;
+            bottom: 15px;
+            position: absolute;
+            left: 68px;
+
+            &:hover {
+                background: url(img/elements/btn-hover.png);
+            }
+        }
+
+        .opened-letter {
+            width: 377px;
+            height: 431px;
+            background: url(img/memos/open-letter.png);
+            position: absolute;
+            left: -28px;
+            bottom: -17px;
+        }
+
+        .left-block {
+            width: 336px;
+            height: 400px;
+            left: 100px;
+        }
+
+        .right-block {
+            width: 412px;
+            height: 523px;
+            top: 70px;
+            right: 0;
+            background: url(img/memos/memo-open-bg.png);
+            padding-left: 33px;
+            padding-top: 128px;
+
+            a {
+                height: 56px;
+                display: block;
+                position: relative;
+                text-decoration: none;
+                padding-left: 20px;
+                color: #000;
+                font-family: B52, Georgia, serif;
+                font-size: 22px;
+                padding-top: 7px;
+            }
+
+            .cil {
+                width: 326px;
+                padding-right: 11px;
+                height: 75px;
+                line-height: 27px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+                }
+
+                &.active {
+                    background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+                }
+            }
+
+            .bulling {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+
+                &.active {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .stulking {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+
+                &.active {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .speech {
+                width: 233px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+
+                &.active {
+                    background: url(img/quiz/type-of-violence/kil-hover.png) no-repeat center top;
+                }
+            }
+
+            .violence {
+                width: 322px;
+                height: 56px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+                }
+
+                &.active {
+                    background: url(img/quiz/type-of-violence/home-violence-hover.png) no-repeat center top;
+                }
+            }
+
+            .discrimination {
+                width: 321px;
+                height: 75px;
+                line-height: 27px;
+
+                &:hover {
+                    background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+                }
+
+                &.active {
+                    background: url(img/quiz/type-of-violence/discrimination-hover.png) no-repeat center top;
+                }
+            }
+        }
     }
 }

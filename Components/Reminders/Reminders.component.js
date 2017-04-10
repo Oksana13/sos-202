@@ -10,15 +10,59 @@
         .controller('reminders', reminders);
 
 
-    function reminders(ngDialog){
+    function reminders(ngDialog, SourcesService){
         let $ctrl = this;
 
-        // $ctrl.clickToOpen = function() {
-        //     ngDialog.open({
-        //         template: '../templates/main-modal.html',
-        //         appendTo: '.main-screen'
-        //     });
-        // };
+        $ctrl.clickToOpenHelp = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/About.html'
+            });
+        };
 
+        $ctrl.onRead = function () {
+            SourcesService.setReminders(true)
+        };
+
+        $ctrl.showReminders = function () {
+          return  SourcesService.getReminders()
+        };
+
+        // types
+
+        $ctrl.clockToOpenHomeViolence = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/Template-HomeViolence.html'
+            });
+        };
+
+        $ctrl.clockToOpenPartnerViolence = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/Template-PartnerViolence.html'
+            });
+        };
+
+        $ctrl.clockToOpenStulking = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/Template-Stalking.html'
+            });
+        };
+
+        $ctrl.clockToOpenCil = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/Template-Cil.html'
+            });
+        };
+
+        $ctrl.clockToOpenBulling = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/Template-Bulling.html'
+            });
+        };
+
+        $ctrl.clockToOpenDiscrimination = function() {
+            ngDialog.open({
+                template: 'Data/Reminders/Template-Discrimination.html'
+            });
+        };
     }
 })();

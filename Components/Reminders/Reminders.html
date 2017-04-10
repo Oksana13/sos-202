@@ -1,3 +1,55 @@
 <div class="main-container reminders">
     <home></home>
+
+    <div class="help-btn" ng-click="$ctrl.clickToOpenHelp()">
+        <img src="source/img/elements/reference.png">
+    </div>
+
+    <div class="left-block">
+        <a href
+           ng-click="$ctrl.onRead()"
+           class="btn">Прочесть памятки
+        </a>
+
+        <div ng-if="$ctrl.showReminders()" class="opened-letter"></div>
+    </div>
+
+
+    <div class="right-block" ng-if="$ctrl.showReminders()">
+        <a href
+           ng-click="$ctrl.clockToOpenHomeViolence()"
+           class="violence">- Домашнее насилие
+        </a>
+
+
+        <a href
+           ng-click="$ctrl.clockToOpenPartnerViolence()"
+           class="violence">- Партнерское насилие
+        </a>
+
+
+        <a href
+           ng-click="$ctrl.clockToOpenStulking()"
+           class="stulking">- Сталкинг
+        </a>
+
+
+        <a href
+           ng-click="$ctrl.clockToOpenCil()"
+           class="cil">- Корректирующее изнасилование
+        </a>
+
+
+        <a href
+           ng-click="$ctrl.clockToOpenBulling()"
+           class="bulling">- Буллинг
+        </a>
+
+
+        <a href
+           ng-click="$ctrl.clockToOpenDiscrimination()"
+           class="discrimination">- Насилие со стороны специалистов
+
+        </a>
+    </div>
 </div>
