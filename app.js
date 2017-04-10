@@ -45,6 +45,11 @@ angular.module('app', ['components', 'ngRoute', 'ngDialog', 'ui.bootstrap'])
                 controller: 'strategies'
             })
 
+            .when('/comments', {
+                template: '<comments></comments>',
+                controller: 'comments'
+            })
+
             .otherwise({redirectTo: '/'});
     }
     ])

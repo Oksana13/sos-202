@@ -17,6 +17,16 @@ p, span, ul, ol {
     font-size: 16px;
 }
 
+a {
+    &:focus {
+        outline: none !important;
+    }
+
+    &:active {
+        box-shadow: none !important;
+    }
+}
+
 .hidden {
     display: none;
 }
@@ -192,6 +202,10 @@ main {
 
 
         }
+    }
+
+    .comment {
+        margin: 0 0 55px 0;
     }
 }
 

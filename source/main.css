@@ -16,6 +16,12 @@ ol {
   font-family: Cambria, Georgia, serif;
   font-size: 16px;
 }
+a:focus {
+  outline: none !important;
+}
+a:active {
+  box-shadow: none !important;
+}
 .hidden {
   display: none;
 }
@@ -165,6 +171,9 @@ main .bookmark:hover {
   margin: 0 auto;
   width: 182px;
   border-bottom: none;
+}
+.popup-content .comment {
+  margin: 0 0 55px 0;
 }
 .ngdialog-close {
   width: 39px;
@@ -737,4 +746,33 @@ main .bookmark:hover {
 }
 .main-container.quiz-strategies .strategy-btn.mutualaid:hover {
   background: url(img/quiz/strategies/mutual-aid-btn-hover.png) no-repeat;
+}
+.main-container.comments {
+  background: url(img/quiz/comments/comments-bg.png);
+}
+.main-container.comments .activist-comment {
+  width: 285px;
+  height: 42px;
+  position: absolute;
+  bottom: -400px;
+  font-size: 22px;
+  line-height: 23px;
+  left: 70px;
+  text-align: center;
+}
+.main-container.comments .activist-comment:hover {
+  background: url(img/elements/write-comment-hover.png);
+}
+.main-container.comments .letters {
+  position: absolute;
+  bottom: -400px;
+  font-size: 22px;
+  right: 80px;
+  line-height: 21px;
+  width: 212px;
+  height: 46px;
+  text-align: center;
+}
+.main-container.comments .letters:hover {
+  background: url(img/elements/read-letters-hover.png);
 }
