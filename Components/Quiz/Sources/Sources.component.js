@@ -61,7 +61,11 @@
             SourcesService.setAge(age);
             SourcesService.setAgeStack(age);
             SourcesService.updatedAllStacks();
-            console.log(SourcesService.getAge());
+
+            $ctrl.getAge = function () {
+              return SourcesService.getCurrentAge();
+            };
+            console.log(SourcesService.getCurrentAge());
 
 
         };

@@ -38,6 +38,10 @@
                 }
             },
 
+            getCurrentAge: function () {
+              return age;
+            },
+
             getAge: function () {
                 if (age == '18-'){
                     return true

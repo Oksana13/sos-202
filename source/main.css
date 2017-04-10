@@ -382,18 +382,34 @@ main .bookmark:hover {
   opacity: 0;
 }
 .main-container.quiz-sources .control__indicator {
-  top: 2px;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background: #e6e6e6;
-  border-radius: 50%;
+  width: 13px;
+  height: 16px;
+  margin: 2px 1px;
 }
 .main-container.quiz-sources input:checked ~ .control__indicator {
-  background: #2aa1c0;
+  background: rgba(0, 0, 0, 0.3);
 }
-.main-container.quiz-sources label {
+.main-container.quiz-sources .options {
+  width: 80px;
+  height: 24px;
+  display: inline-block;
+  float: right;
+  background: url(img/quiz/sources/options.png) no-repeat;
+}
+.main-container.quiz-sources .options label {
   cursor: pointer;
+}
+.main-container.quiz-sources .options label:first-child .control__indicator {
+  width: 16px;
+}
+.main-container.quiz-sources .options label:nth-child(2) .control__indicator {
+  width: 15px;
+}
+.main-container.quiz-sources .options label:nth-child(4) .control__indicator {
+  margin-left: -2px;
+}
+.main-container.quiz-sources .options label:nth-child(5) .control__indicator {
+  margin-left: 0px;
 }
 .main-container.quiz-sources .resources-about {
   left: 380px;
@@ -420,10 +436,6 @@ main .bookmark:hover {
 }
 .main-container.quiz-sources .right-block span {
   max-width: 190px;
-}
-.main-container.quiz-sources .options {
-  display: inline-block;
-  float: right;
 }
 .main-container.quiz-sources .resource-type {
   position: relative;
@@ -485,7 +497,8 @@ main .bookmark:hover {
   margin-left: 5px;
   cursor: pointer;
 }
-.main-container.quiz-sources .age .options label:hover {
+.main-container.quiz-sources .age .options label:hover,
+.main-container.quiz-sources .age .options label.active {
   border-radius: 50%;
   background: #e8c551;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
@@ -532,6 +545,7 @@ main .bookmark:hover {
 }
 .main-container.quiz-calc .left-block .sex {
   width: 64px;
+  margin-left: 25px;
 }
 .main-container.quiz-calc .left-block .sex:hover {
   background: url(img/quiz/type-of-violence/sex-hover.png) no-repeat center top;

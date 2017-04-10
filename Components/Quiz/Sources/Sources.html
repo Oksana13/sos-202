@@ -28,6 +28,7 @@
                             ng-value="age"
                             ng-change="$ctrl.checkAge()"
                             id="{{age}}"
+                            ng-class="$ctrl.getAge() === age ? 'active' : ''"
                             name="age">
                     {{age}}
                 </label>

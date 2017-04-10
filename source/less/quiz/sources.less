@@ -2,7 +2,6 @@
     &.quiz-sources {
         background: url(img/quiz/sources/sources-bg.png) no-repeat;
 
-
         input {
             position: absolute;
             z-index: -1;
@@ -10,20 +9,49 @@
         }
 
         .control__indicator {
-            top: 2px;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            background: #e6e6e6;
-            border-radius: 50%;
+            width: 13px;
+            height: 16px;
+            margin: 2px 1px;
         }
 
         input:checked ~ .control__indicator {
-            background: #2aa1c0;
+            background: rgba(0,0,0,.3);
         }
 
-        label {
-            cursor: pointer;
+        .options {
+            width: 80px;
+            height: 24px;
+            display: inline-block;
+            float: right;
+            background: url(img/quiz/sources/options.png) no-repeat;
+
+            label {
+                cursor: pointer;
+
+                &:first-child {
+                    .control__indicator {
+                        width: 16px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .control__indicator {
+                        width: 15px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    .control__indicator {
+                        margin-left: -2px;
+                    }
+                }
+
+                &:nth-child(5) {
+                    .control__indicator {
+                        margin-left: 0px;
+                    }
+                }
+            }
         }
 
         .resources-about {
@@ -60,14 +88,6 @@
             span {
                 max-width: 190px;
             }
-        }
-
-        .options {
-            //width: 75px;
-            //height: 24px;
-            display: inline-block;
-            float: right;
-            //background: url(img/quiz/sources/radio-btn.svg);
         }
 
         .resource-type {
@@ -142,7 +162,7 @@
                     margin-left: 5px;
                     cursor: pointer;
 
-                    &:hover {
+                    &:hover, &.active {
                         .age-bg;
                     }
                 }
