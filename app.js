@@ -50,6 +50,11 @@ angular.module('app', ['components', 'ngRoute', 'ngDialog', 'ui.bootstrap'])
                 controller: 'comments'
             })
 
+            .when('/feedback', {
+                template: '<feedback></feedback>',
+                controller: 'feedback'
+            })
+
             .otherwise({redirectTo: '/'});
     }
     ])
