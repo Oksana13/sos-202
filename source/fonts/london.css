@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'London';
+    src: local('London'), url('London.woff2') format('woff2'), url('London.woff') format('woff'), url('London.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
