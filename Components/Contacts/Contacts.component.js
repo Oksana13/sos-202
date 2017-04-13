@@ -10,15 +10,14 @@
         .controller('contacts', contacts);
 
 
-    function contacts(ngDialog){
+    function contacts(){
         let $ctrl = this;
 
-        // $ctrl.clickToOpen = function() {
-        //     ngDialog.open({
-        //         template: '../templates/main-modal.html',
-        //         appendTo: '.main-screen'
-        //     });
-        // };
+        $ctrl.contact = '';
+
+        $ctrl.chooseContact = function (val) {
+            $ctrl.contact = val;
+        };
 
     }
 })();

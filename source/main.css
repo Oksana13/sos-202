@@ -272,6 +272,25 @@ main .bookmark:hover {
   font-weight: bold;
   margin-bottom: 0;
   font-family: B52;
+  cursor: pointer;
+}
+.main-container.contacts-screen .left-block .contacts-list li .title:hover {
+  text-decoration: underline;
+}
+.main-container.contacts-screen .right-block {
+  width: 300px;
+  top: 63px;
+  right: 80px;
+  padding-right: 33px;
+}
+.main-container.contacts-screen .right-block .content {
+  padding-right: 15px;
+  word-wrap: break-word;
+  font-family: B52;
+  font-size: 16px;
+}
+.main-container.contacts-screen .right-block .content a {
+  display: block;
 }
 .main-container.reminders {
   width: 892px;
