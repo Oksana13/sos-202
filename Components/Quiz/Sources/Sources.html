@@ -6,9 +6,9 @@
         </a>
 
         <a href="#!/calculation"
-           class="next">
-           <!--ng-class="{true: 'disabled'}[$ctrl.allStacks() == undefined]">-->
-            <!--ng-href="{{$ctrl.allStacks() == undefined ? '' : '#!/calculation'}}"-->
+           class="next"
+           ng-class="{true: 'disabled'}[$ctrl.allStacks() == false]"
+            ng-href="{{$ctrl.allStacks() == false ? '' : '#!/calculation'}}">
             <!--ng-show="$ctrl.allStacks()">-->
             <img src="source/img/elements/arrow-right.png">
         </a>
