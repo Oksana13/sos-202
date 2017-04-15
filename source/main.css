@@ -530,7 +530,9 @@ main .bookmark:hover {
   margin: 2px 1px;
 }
 .main-container.quiz-sources input:checked ~ .control__indicator {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ed3000;
+  border-radius: 22%;
 }
 .main-container.quiz-sources .options {
   width: 80px;
@@ -612,6 +614,9 @@ main .bookmark:hover {
 .main-container.quiz-sources titlebg svg {
   width: 215px;
   height: auto;
+}
+.main-container.quiz-sources .title-bg.active {
+  fill: green;
 }
 .main-container.quiz-sources .age .options {
   position: absolute;

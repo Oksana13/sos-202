@@ -9,7 +9,6 @@
            class="next"
            ng-class="{true: 'disabled'}[$ctrl.allStacks() == false]"
             ng-href="{{$ctrl.allStacks() == false ? '' : '#!/calculation'}}">
-            <!--ng-show="$ctrl.allStacks()">-->
             <img src="source/img/elements/arrow-right.png">
         </a>
     </div>
@@ -22,16 +21,16 @@
 
         <div class="resource-type age">
             <h3>Возраст</h3>
-            <titlebg></titlebg>
+            <titlebg fill="$ctrl.getAgeStack()"></titlebg>
 
             <div class="options">
-                <label ng-repeat="age in $ctrl.ages" for="{{age}}">
+                <label ng-repeat="age in $ctrl.ages" for="{{age}}"
+                       ng-class="$ctrl.getAge() === age ? 'active' : ''">
                     <input  type="radio"
                             ng-model="$ctrl.ageRes.val"
                             ng-value="age"
                             ng-change="$ctrl.checkAge()"
                             id="{{age}}"
-                            ng-class="$ctrl.getAge() === age ? 'active' : ''"
                             name="age">
                     {{age}}
                 </label>
@@ -42,7 +41,7 @@
         <!--isolation-->
         <div class="resource-type isolation">
             <h3>Изоляция</h3>
-            <titlebg></titlebg>
+            <titlebg fill="$ctrl.getIsolationStack()"></titlebg>
 
             <div class="row">
                 <div class="help-btn" ng-click="$ctrl.clickToOpenSocial()">

@@ -54,6 +54,8 @@
         $ctrl.homophobias = ['1', '2', '3', '4', '5'];
         $ctrl.homophobiaRes = {val: ''};
 
+        $ctrl.fill = false;
+
 
         $ctrl.checkAge = function () {
             age = $ctrl.ageRes.val;
@@ -65,10 +67,14 @@
             $ctrl.getAge = function () {
               return SourcesService.getCurrentAge();
             };
-            console.log(SourcesService.getCurrentAge());
-
-
         };
+
+        $ctrl.getAgeStack = function () {
+            (SourcesService.getAgeStack()) ? $ctrl.fill = true : $ctrl.fill = false;
+
+            // console.log($ctrl.fill);
+        };
+
 
         $ctrl.checkIsolation = function () {
             social = $ctrl.socialRes.val,
@@ -86,6 +92,12 @@
             SourcesService.setIsolation(isolation);
             SourcesService.setIsolationStack(isolation, arr);
             SourcesService.updatedAllStacks();
+        };
+
+        $ctrl.getIsolationStack = function () {
+            (SourcesService.getIsolationStack()) ? $ctrl.fill = true : $ctrl.fill = false;
+
+            // console.log($ctrl.fill);
         };
 
 

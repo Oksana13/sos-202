@@ -5,7 +5,10 @@
         .module('components')
         .component('titlebg', {
             templateUrl: 'Components/Common/TitleBg/TitleBg.html',
-            controller: 'titlebg'
+            controller: 'titlebg',
+            bindings: {
+                fill: '<'
+            }
         })
         .controller('titlebg', titlebg);
 
