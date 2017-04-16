@@ -14,9 +14,12 @@
 
     <div class="right-block ">
         <h3>Обратная связь</h3>
-        <form action="">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Поле для ввода текста"></textarea>
-            <button class="btn" type="submit">Отправить</button>
+        <form action="../../../sendToSos.php" method="post">
+        <!--<form ng-submit="$ctrl.onSubmit()">-->
+            <textarea name="text" ng-model="$ctrl.text" id="text" type="text" cols="30" rows="10" placeholder="Поле для ввода текста"></textarea>
+            <input class="btn"
+                   type="submit" id="submit" value="Отправить">
+            </input>
         </form>
     </div>
 

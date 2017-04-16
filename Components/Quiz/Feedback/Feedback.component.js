@@ -10,30 +10,26 @@
         .controller('feedback', feedback);
 
 
-    function feedback (ngDialog, SourcesService){
-        let $ctrl = this,
-        type;
+    function feedback ($http){
+        let $ctrl = this;
 
-        type = SourcesService.getViolenceType();
+        $ctrl.onSubmit = function () {
 
+            let text = $ctrl.text;
 
-
-        $ctrl.clickToOpenComments = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Comments/Template-Activist-Comment.html'
-            });
-        };
-
-        $ctrl.clickToOpenLetters = function() {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Templates-Comments/Letters/Template-Letters-' + type + '.html'
-            });
-        };
-
-
-
+            $http({
+                method  : 'POST',
+                url     : 'sendToSos.php',
+                data    : text,
+                headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+            })
+                .then(function (response) {
+                    let result = response.data;
+                    console.log(result)
+                }, function err (responseErr) {
+                    console.log(responseErr)
+                });
+        }
 
     }
 })();
