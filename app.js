@@ -56,7 +56,7 @@ angular.module('app', ['components', 'ngRoute', 'ngDialog', 'ui.bootstrap'])
             })
 
             .otherwise({redirectTo: '/'});
-    }
+        }
     ])
 
     .directive('bookmark', function () {

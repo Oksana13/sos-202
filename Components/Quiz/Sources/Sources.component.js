@@ -144,7 +144,7 @@
             SourcesService.setCommonStack(common, arr);
             SourcesService.updatedAllStacks();
 
-            console.log($ctrl.allStacks());
+            // console.log($ctrl.allStacks());
         };
 
         $rootScope.$on(' updateAllStacks', function () {
