@@ -62,7 +62,7 @@ angular.module('app', ['components', 'ngRoute', 'ngDialog', 'ui.bootstrap'])
     .directive('bookmark', function () {
         return {
             restrict: 'E',
-            templateUrl: './templates/bookmark.html'
+            templateUrl: './Components/Common/bookmark.html'
         }
     });
 
