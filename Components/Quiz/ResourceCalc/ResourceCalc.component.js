@@ -107,6 +107,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Насилие со стороны со стороны родителей или других взрослых родственников, жестокое обращение с детьми</div>'
             });
         };
@@ -115,6 +116,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Насилие со стороны партнеров по браку (официальному или гражданскому) или по романтическим отношениям</div>'
             });
         };
@@ -123,6 +125,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Навязчивое нежелательное внимание или преследование  </div>'
             });
         };
@@ -131,6 +134,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Изнасилование, совершаемое в связи с (предполагаемой) сексуальной ориентацией и/или гендерной идентичностью человека.</div>'
             });
         };
@@ -139,6 +143,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Травля со стороны участника/участников группы по отношению к другому участнику/участникам той же группы</div>'
             });
         };
@@ -147,6 +152,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Насилие, осуществляемое представителями помогающих профессий (врачами, психологами, психотерапевтами, социальными работниками), а также педагогами и общинными лидерами</div>'
             });
         };

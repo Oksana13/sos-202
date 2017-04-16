@@ -47,6 +47,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Если ты обнаружила в себе влечение к девушкам и/или ведешь себя гендерно неконформно, а также если ты позиционируешь себя как ЛБТИК.</div>'
             });
         };
@@ -55,6 +56,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Если твоя подруга обнаружила в себе влечение к девушкам и/или ведет себя гендерно неконформно, а также если твоя подруга позиционирует себя как ЛБТИК.</div>'
             });
         };
@@ -63,6 +65,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Если Ваша дочь (младшая родственница) обнаружила в себе влечение к девушкам и/или ведет себя гендерно неконформно, а также если она позиционирует себя как ЛБТИК.</div>'
             });
         };

@@ -65,6 +65,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Как оказать себе или своим близким первую помощь?</div>'
             });
         };
@@ -73,6 +74,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Как мы справляемся со стрессом?</div>'
             });
         };
@@ -81,6 +83,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Как мы защищаем себя или своих близких?</div>'
             });
         };
@@ -89,6 +92,7 @@
             ngDialog.open({
                 plain: true,
                 controller: 'Popup',
+                appendClassName: 'small-popup',
                 template: '<div class="popup-content">Как мы поддерживаем друг друга в формате «равный — равному»?</div>'
             });
         };
