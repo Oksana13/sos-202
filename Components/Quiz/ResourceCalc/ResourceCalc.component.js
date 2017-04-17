@@ -84,7 +84,7 @@
 
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Resource-Types/tpl-resource-openness-' + common + '.html'
+                template: 'Data/Templates-Resource-Types/tpl-resource-common-' + common + '.html'
             });
         };
 
