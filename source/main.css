@@ -219,6 +219,26 @@ main .bookmark:hover {
 .copyright a:hover {
   text-decoration: underline;
 }
+.nav-tabs > li {
+  font-family: B52;
+  color: #333;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+}
+.nav-tabs > li a {
+  color: #333;
+  padding: 3px 15px;
+  border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  padding: 3px 15px;
+  background: #EBCD62;
+  border: none;
+  box-shadow: 2px 4px 2px 0px;
+}
 .main-container.main-screen {
   background: url(img/bg-start-page.png);
 }
