@@ -10,24 +10,32 @@
         .controller('feedback', feedback);
 
 
-    function feedback ($http){
+    function feedback ($http, ngDialog){
         let $ctrl = this;
 
         $ctrl.onSubmit = function () {
 
             let text = $ctrl.text;
 
+            text = encodeURIComponent(text);
+
             $http({
                 method  : 'POST',
-                url     : 'sendToSos.php',
-                data    : text,
+                url     : 'send.php',
+                data    : 'text=' + text,
                 headers : {'Content-Type': 'application/x-www-form-urlencoded'}
             })
                 .then(function (response) {
-                    let result = response.data;
-                    console.log(result)
+                    ngDialog.open({
+                        template: 'Components/Common/Alert/Alert-success.html',
+                        appendClassName: 'alert-dialog'
+                    });
+
                 }, function err (responseErr) {
-                    console.log(responseErr)
+                    ngDialog.open({
+                        template: 'Components/Common/Alert/Alert-warning.html',
+                        appendClassName: 'alert-dialog'
+                    });
                 });
         }
 
