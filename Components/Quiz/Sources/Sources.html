@@ -7,6 +7,7 @@
 
         <a href="#!/calculation"
            class="next"
+           ng-click="$ctrl.checkSources()"
            ng-class="{true: 'disabled'}[$ctrl.allStacks() == false]"
            ng-href="{{$ctrl.allStacks() == false ? '' : '#!/calculation'}}">
             <img src="source/img/elements/arrow-right.png">

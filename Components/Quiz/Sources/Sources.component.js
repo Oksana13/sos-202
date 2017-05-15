@@ -155,6 +155,17 @@
             return SourcesService.getAllStacks();
         };
 
+        $ctrl.checkSources = function () {
+            if (!$ctrl.allStacks()) {
+                ngDialog.open({
+                    plain: true,
+                    controller: 'Popup',
+                    template: '<div class="popup-content"><div class="alert alert-warning" uib-alert dismiss-on-timeout="3500"  close="closeThisDialog()" role="alert">Для перехода на следующую страницу необходимо заполнить все пункты</div></div>',
+                    appendClassName: 'alert-dialog'
+                });
+            }
+        };
+
 
 
         // Help buttons
