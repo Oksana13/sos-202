@@ -33,6 +33,9 @@
                         appendClassName: 'alert-dialog'
                     });
 
+                    $ctrl.text = '';
+                    $ctrl.email = '';
+
                     setTimeout(function () {
                         window.location = './#!/calculation';
                     }, 2000)
@@ -42,6 +45,8 @@
                         template: 'Components/Common/Alert/Alert-warning.html',
                         appendClassName: 'alert-dialog'
                     });
+
+
                 });
         }
 
