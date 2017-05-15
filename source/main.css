@@ -962,6 +962,20 @@ main .bookmark:hover {
 .main-container.comments .letters:hover {
   background: url(img/elements/read-letters-hover.png);
 }
+.popup-content .activ-comment {
+  font-family: B52, Georgia, serif;
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  width: 215px;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+.popup-content .activ-comment:hover {
+  background: url(img/elements/read-letters-hover.png) no-repeat;
+}
 .main-container.feedback {
   width: 840px;
   background: url(img/quiz/final/feedback-bg.png);
