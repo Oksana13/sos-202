@@ -15,12 +15,29 @@
     }
 
     textarea {
+      border: 1px dashed #999;
+      padding: 10px;
       margin-right: 52px;
       display: block;
-      height: 290px;
+      height: 250px;
       width: 252px;
       background: none;
-      border: none;
+      &:focus {
+        border: 1px dashed #6cbeec;
+        outline: none;
+      }
+    }
+
+    input[type="email"] {
+      background: none;
+      outline: none;
+      border: 1px dashed #999;
+      width: 252px;
+      padding: 5px 10px;
+      margin-bottom: 15px;
+      &:focus {
+        border: 1px dashed #6cbeec;
+      }
     }
 
     .btn {

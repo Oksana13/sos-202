@@ -16,13 +16,15 @@
         $ctrl.onSubmit = function () {
 
             let text = $ctrl.text;
+            let email = $ctrl.email;
 
             text = encodeURIComponent(text);
+            email = encodeURIComponent(email);
 
             $http({
                 method  : 'POST',
                 url     : 'send.php',
-                data    : 'text=' + text,
+                data    : 'text=' + '\n' + 'Email: ' + email + '\n' + 'Комментарий: ' + text,
                 headers : {'Content-Type': 'application/x-www-form-urlencoded'}
             })
                 .then(function (response) {

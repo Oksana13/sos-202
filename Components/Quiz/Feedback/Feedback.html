@@ -15,6 +15,7 @@
     <div class="right-block ">
         <h3>Обратная связь</h3>
         <form ng-submit="$ctrl.onSubmit()">
+            <input type="email" name="email" required placeholder="Ваш email" ng-model="$ctrl.email" id="email">
             <textarea name="text" ng-model="$ctrl.text" id="text" type="text" cols="30" rows="10" placeholder="Поле для ввода текста" required></textarea>
             <input class="btn"
                    type="submit" id="submit" value="Отправить">

@@ -171,7 +171,7 @@ main .bookmark:hover {
 }
 .popup-content {
   height: 490px;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-right: 20px;
   font-family: Cambria, Georgia, serif;
 }
@@ -332,8 +332,7 @@ main .bookmark:hover {
 .main-container.contacts-screen .right-block .content {
   padding-right: 15px;
   word-wrap: break-word;
-  font-family: B52;
-  font-size: 16px;
+  font-size: 14px;
 }
 .main-container.contacts-screen .right-block .content a {
   display: block;
@@ -977,12 +976,28 @@ main .bookmark:hover {
   top: -90px;
 }
 .main-container.feedback textarea {
+  border: 1px dashed #999;
+  padding: 10px;
   margin-right: 52px;
   display: block;
-  height: 290px;
+  height: 250px;
   width: 252px;
   background: none;
-  border: none;
+}
+.main-container.feedback textarea:focus {
+  border: 1px dashed #6cbeec;
+  outline: none;
+}
+.main-container.feedback input[type="email"] {
+  background: none;
+  outline: none;
+  border: 1px dashed #999;
+  width: 252px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+.main-container.feedback input[type="email"]:focus {
+  border: 1px dashed #6cbeec;
 }
 .main-container.feedback .btn {
   width: 212px;
