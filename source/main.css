@@ -34,8 +34,11 @@ main {
   height: 100%;
   background: url(img/bg.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 60px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 main .home-btn {
   width: 101px;
@@ -218,12 +221,12 @@ main .bookmark:hover {
 }
 .copyright {
   width: 260px;
-  position: relative;
-  float: right;
   font-family: Cambria, Georgia, serif;
   color: #b6b6b6;
   line-height: 18px;
   font-size: 16px;
+  align-self: flex-end;
+  margin-right: 25px;
 }
 .copyright a {
   color: #b6b6b6;
