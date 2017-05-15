@@ -578,9 +578,7 @@ main .bookmark:hover {
   margin: 2px 1px;
 }
 .main-container.quiz-sources input:checked ~ .control__indicator {
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ed3000;
-  border-radius: 22%;
+  background: url(img/quiz/sources/tick.png) no-repeat 52% center;
 }
 .main-container.quiz-sources .options {
   width: 80px;
