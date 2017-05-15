@@ -33,6 +33,10 @@
                         appendClassName: 'alert-dialog'
                     });
 
+                    setTimeout(function () {
+                        window.location = './#!/calculation';
+                    }, 2000)
+
                 }, function err (responseErr) {
                     ngDialog.open({
                         template: 'Components/Common/Alert/Alert-warning.html',
