@@ -19,6 +19,7 @@
 
             character = event.currentTarget.id;
             SourcesService.setCharacter(character);
+            window.location = './#!/sources';
 
             // console.log('set: ' + character);
 
