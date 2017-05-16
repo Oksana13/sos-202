@@ -391,14 +391,6 @@ main .bookmark:hover {
 .main-container.reminders .btn:hover {
   background: url(img/elements/btn-hover.png);
 }
-.main-container.reminders .opened-letter {
-  width: 377px;
-  height: 431px;
-  background: url(img/memos/open-letter.png);
-  position: absolute;
-  left: -28px;
-  bottom: -17px;
-}
 .main-container.reminders .left-block {
   width: 290px;
   padding-right: 25px;
@@ -754,6 +746,20 @@ main .bookmark:hover {
 }
 .main-container.quiz-sources .common titlebg svg {
   width: 310px;
+}
+.main-container.quiz-sources-about {
+  background: url(img/quiz/sources/sources-about.png) no-repeat;
+}
+.main-container.quiz-sources-about .left-block {
+  width: 594px;
+  left: 140px;
+  top: 136px;
+  height: 304px;
+  overflow-y: auto;
+  padding-right: 25px;
+}
+.main-container.quiz-sources-about .next {
+  right: -34px;
 }
 .main-container.quiz-calc {
   background: url(img/quiz/type-of-violence/type-of-violence-bg.png) no-repeat;

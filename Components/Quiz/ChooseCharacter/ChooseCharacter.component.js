@@ -19,7 +19,7 @@
 
             character = event.currentTarget.id;
             SourcesService.setCharacter(character);
-            window.location = './#!/sources';
+            window.location = './#!/sources-about';
 
         };
 

@@ -30,6 +30,11 @@ angular.module('app', ['components', 'ngRoute', 'ngDialog', 'ui.bootstrap'])
                 controller: 'chooseCharacter'
             })
 
+            .when('/sources-about', {
+                template: '<sources-about></sources-about>',
+                controller: 'sourcesAbout'
+            })
+
             .when('/sources', {
                 template: '<sources></sources>',
                 controller: 'sources'

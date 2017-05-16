@@ -170,13 +170,6 @@
 
         // Help buttons
 
-        $ctrl.clickToOpenAbout = function () {
-            ngDialog.open({
-                controller: 'Popup',
-                template: 'Data/Template-Resources-About.html'
-            });
-        };
-
         $ctrl.clickToOpenSocial = function () {
             ngDialog.open({
                 plain: true,

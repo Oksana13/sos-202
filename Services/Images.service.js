@@ -35,7 +35,6 @@
                     'source/img/elements/reference-hover.png',
                     'source/img/elements/write-comment-hover.png',
                     'source/img/memos/bg-memo.png',
-                    'source/img/memos/open-letter.png',
                     'source/img/quiz/choose/choosing-character-bg.png',
                     'source/img/quiz/choose/friend.png',
                     'source/img/quiz/choose/friend-hover.png',
@@ -80,7 +79,8 @@
                     'source/img/quiz/type-of-violence/sex-hover.png',
                     'source/img/quiz/type-of-violence/type-of-violence-bg.png',
                     'source/img/quiz/violence-type-btn.png',
-                    'source/img/quiz/violence-type-btn-hover.png'
+                    'source/img/quiz/violence-type-btn-hover.png',
+                    'source/img/quiz/sources/sources-about.png'
                 ];
 
                 return images;
