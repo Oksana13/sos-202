@@ -28,7 +28,7 @@
             </div>
 
             <a href
-               ng-click="$ctrl.setViolenceType('homeViolence')"
+               ng-click="$ctrl.setViolenceType('homeViolence', 'Домашнее насилие')"
                id="homeViolence"
                ng-class="$ctrl.getViolenceType() === 'homeViolence' ? 'active' : ''"
                class="violence">- Домашнее насилие
@@ -40,7 +40,7 @@
             </div>
 
             <a href
-               ng-click="$ctrl.setViolenceType('PartnerViolence')"
+               ng-click="$ctrl.setViolenceType('PartnerViolence', 'Партнерское насилие')"
                id="PartnerViolence"
                ng-class="$ctrl.getViolenceType() === 'PartnerViolence' ? 'active' : ''"
                class="violence">- Партнерское насилие
@@ -52,7 +52,7 @@
             </div>
 
             <a href
-               ng-click="$ctrl.setViolenceType('stulking')"
+               ng-click="$ctrl.setViolenceType('stulking', 'Сталкинг')"
                id="stulking"
                ng-class="$ctrl.getViolenceType() === 'stulking' ? 'active' : ''"
                class="stulking">- Сталкинг
@@ -64,7 +64,7 @@
             </div>
 
             <a href
-               ng-click="$ctrl.setViolenceType('cil')"
+               ng-click="$ctrl.setViolenceType('cil', 'Корректирующее изнасилование')"
                id="cil"
                ng-class="$ctrl.getViolenceType() === 'cil' ? 'active' : ''"
                class="cil">- Корректирующее изнасилование
@@ -76,7 +76,7 @@
             </div>
 
             <a href
-               ng-click="$ctrl.setViolenceType('bulling')"
+               ng-click="$ctrl.setViolenceType('bulling', 'Буллинг')"
                id="bulling"
                ng-class="$ctrl.getViolenceType() === 'bulling' ? 'active' : ''"
                class="bulling">- Буллинг
@@ -88,7 +88,7 @@
             </div>
 
             <a href
-               ng-click="$ctrl.setViolenceType('discrimination')"
+               ng-click="$ctrl.setViolenceType('discrimination', 'Насилие со стороны специалистов')"
                id="discrimination"
                ng-class="$ctrl.getViolenceType() === 'discrimination' ? 'active' : ''"
                class="discrimination">- Насилие со стороны специалистов

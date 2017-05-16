@@ -96,8 +96,8 @@
         };
 
 
-        $ctrl.setViolenceType = function (val) {
-            SourcesService.setViolenceType(val) ;
+        $ctrl.setViolenceType = function (val, name) {
+            SourcesService.setViolenceType(val, name) ;
             $ctrl.moveToStrategies();
         };
 

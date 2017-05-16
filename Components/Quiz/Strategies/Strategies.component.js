@@ -31,6 +31,10 @@
             type = 'homeViolence'
         }
 
+        $ctrl.getViolenceTypeName = function () {
+            return SourcesService.getViolenceTypeName();
+        };
+
         $ctrl.clickToOpenSurvival = function() {
             ngDialog.open({
                 controller: 'Popup',

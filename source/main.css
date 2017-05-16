@@ -920,10 +920,11 @@ main .bookmark:hover {
   font-family: B52, Georgia, serif;
   font-size: 22px;
   transform: rotate(94deg);
-  right: -157px;
+  right: -160px;
   position: absolute;
-  top: 184px;
+  top: 170px;
   width: 280px;
+  line-height: 20px;
 }
 .main-container.quiz-strategies.girl {
   background: url(img/quiz/strategies/girl-bg.png) no-repeat;

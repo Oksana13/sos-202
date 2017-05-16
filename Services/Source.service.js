@@ -6,7 +6,7 @@
 
     function SourcesService($rootScope) {
         let $ctrl = this, age, character, isolation, openness, common, type,
-            reminders = false,
+            violenceTypeName = '',
             ageStack = false,
             opennessStack = false,
             isolationStack = false,
@@ -156,21 +156,19 @@
                 $rootScope.$emit(' updatedAllStacks', allStack);
             },
 
-            setViolenceType: function (val) {
+            setViolenceType: function (val, name) {
                 type = val;
+                violenceTypeName = name;
             },
 
             getViolenceType: function () {
                 return type;
+            },
+
+            getViolenceTypeName: function () {
+                return violenceTypeName;
             }
-            //
-            // setReminders: function (val) {
-            //     reminders = val;
-            // },
-            //
-            // getReminders: function () {
-            //     return reminders;
-            // }
+
 
         }
 
