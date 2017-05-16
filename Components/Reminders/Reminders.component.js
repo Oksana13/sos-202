@@ -13,14 +13,6 @@
     function reminders(ngDialog){
         let $ctrl = this;
 
-        // $ctrl.clickToOpenHelp = function() {
-        //     ngDialog.open({
-        //         template: 'Data/Reminders/About.html'
-        //     });
-        // };
-
-        // types
-
         $ctrl.clockToOpenHomeViolence = function() {
             ngDialog.open({
                 template: 'Data/Reminders/Template-HomeViolence.html'

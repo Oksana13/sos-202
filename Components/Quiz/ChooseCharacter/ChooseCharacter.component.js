@@ -21,8 +21,6 @@
             SourcesService.setCharacter(character);
             window.location = './#!/sources';
 
-            // console.log('set: ' + character);
-
         };
 
         $ctrl.getCharacter = function () {
@@ -30,18 +28,7 @@
             SourcesService.getCharacter(character);
             currentCharacter = character;
 
-            // console.log('get: ' + currentCharacter);
-
             return currentCharacter;
-        };
-
-
-        $ctrl.clickToOpen = function() {
-            ngDialog.open({
-                plain: true,
-                controller: 'Popup',
-                template: '<div class="popup-content">Выберите точку зрения из четырех возможных. Кликните на знак вопроса рядом с соответствующим названием, если необходимо уточнение, а затем на фигурку персонажа. Далее нажмите на стрелку в нижнем правом углу страницы. Если ни одна из точек зрения все равно не подходит, можно выбрать любую или вернуться на стартовую страницу к Памяткам и Контактам.</div>'
-            });
         };
 
         $ctrl.clickToOpenGirl = function() {
