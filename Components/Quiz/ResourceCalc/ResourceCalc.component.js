@@ -10,7 +10,7 @@
         .controller('calculation', calculation);
 
 
-    function calculation(ngDialog, SourcesService, $rootScope, $scope){
+    function calculation(ngDialog, SourcesService, $location){
         let $ctrl = this;
 
         // Resource types
@@ -92,7 +92,7 @@
         // Violence types
 
         $ctrl.moveToStrategies = function () {
-          window.location = '#!/strategies';
+            $location.path('/strategies');
         };
 
 

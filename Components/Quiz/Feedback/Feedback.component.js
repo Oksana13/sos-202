@@ -10,7 +10,7 @@
         .controller('feedback', feedback);
 
 
-    function feedback ($http, ngDialog){
+    function feedback ($http, ngDialog, $location){
         let $ctrl = this;
 
         $ctrl.onSubmit = function () {
@@ -37,7 +37,7 @@
                     $ctrl.email = '';
 
                     setTimeout(function () {
-                        window.location = './#!/calculation';
+                        $location.path('/calculation');
                     }, 2000)
 
                 }, function err (responseErr) {

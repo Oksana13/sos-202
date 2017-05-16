@@ -4,7 +4,7 @@
     angular
         .module('components')
         .component('sourcesAbout', {
-            templateUrl: 'Components/Quiz/SourcesAbout/SourcesAbout',
+            templateUrl: 'Components/Quiz/SourcesAbout/SourcesAbout.html',
             controller: 'sourcesAbout'
         })
         .controller('sourcesAbout', sourcesAbout);

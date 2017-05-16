@@ -10,7 +10,7 @@
         .controller('chooseCharacter', chooseCharacter);
 
 
-    function chooseCharacter(SourcesService, ngDialog){
+    function chooseCharacter(SourcesService, ngDialog, $location){
         let $ctrl = this,
             character,
             currentCharacter;
@@ -19,8 +19,7 @@
 
             character = event.currentTarget.id;
             SourcesService.setCharacter(character);
-            window.location = './#!/sources-about';
-
+            $location.path('/sources-about');
         };
 
         $ctrl.getCharacter = function () {
