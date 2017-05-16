@@ -162,15 +162,15 @@
 
             getViolenceType: function () {
                 return type;
-            },
-
-            setReminders: function (val) {
-                reminders = val;
-            },
-
-            getReminders: function () {
-                return reminders;
             }
+            //
+            // setReminders: function (val) {
+            //     reminders = val;
+            // },
+            //
+            // getReminders: function () {
+            //     return reminders;
+            // }
 
         }
 

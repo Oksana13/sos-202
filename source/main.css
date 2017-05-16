@@ -258,6 +258,9 @@ main .bookmark:hover {
 .main-container.main-screen {
   background: url(img/bg-start-page.png);
 }
+.main-screen .left-block {
+  top: 120px;
+}
 .main-screen .left-block .btn {
   width: 215px;
   min-height: 52px;
@@ -271,13 +274,30 @@ main .bookmark:hover {
   background: url(img/elements/btn-hover.png);
   transition: .5s;
 }
-.main-screen .right-block .help-btn.about-btn {
-  right: 125px;
-  top: 35px;
+.main-screen .left-block .feedback {
+  width: 233px;
+  height: 56px;
 }
-.main-screen .right-block .help-btn.broshure {
-  right: 240px;
-  top: 315px;
+.main-screen .left-block .feedback:hover {
+  background: url(img/btn-hover.png);
+}
+.main-screen .right-block {
+  top: 60px;
+  width: 450px;
+  height: 561px;
+}
+.main-screen .right-block .about-btn {
+  bottom: 140px;
+  position: absolute;
+  right: -33px;
+  font-size: 29px;
+  width: 321px;
+  height: 75px;
+  text-align: center;
+  padding-top: 10px;
+}
+.main-screen .right-block .about-btn:hover {
+  background: url(img/btn2-hover.png);
 }
 .main-container.contacts-screen {
   background: url(img/contacts/bg-contacts.png) no-repeat;

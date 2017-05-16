@@ -6,16 +6,11 @@
     </div>
 
     <div class="left-block">
-        <a href
-           ng-click="$ctrl.onRead()"
-           class="btn">Прочесть памятки
-        </a>
-
-        <div ng-if="$ctrl.showReminders()" class="opened-letter"></div>
+        <div class="opened-letter"></div>
     </div>
 
 
-    <div class="right-block" ng-if="$ctrl.showReminders()">
+    <div class="right-block" >
         <a href
            ng-click="$ctrl.clockToOpenHomeViolence()"
            class="violence">- Домашнее насилие

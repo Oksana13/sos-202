@@ -19,14 +19,6 @@
             });
         };
 
-        $ctrl.onRead = function () {
-            SourcesService.setReminders(true)
-        };
-
-        $ctrl.showReminders = function () {
-          return  SourcesService.getReminders()
-        };
-
         // types
 
         $ctrl.clockToOpenHomeViolence = function() {
