@@ -482,15 +482,28 @@ main .bookmark:hover {
   background: url(img/quiz/start-screen/start-bg.png) no-repeat;
 }
 .main-container.quiz-start .left-block {
-  width: 350px;
+  top: 135px;
+  left: 170px;
+  width: 455px;
+  height: 323px;
+  overflow-y: auto;
+  padding-right: 25px;
 }
-.main-container.quiz-start .left-block .help-btn.about-btn {
-  right: 0;
-  top: -50px;
+.main-container.quiz-start .left-block::-webkit-scrollbar {
+  width: 10px;
+}
+.main-container.quiz-start .left-block::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+.main-container.quiz-start .left-block::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
 }
 .main-container.quiz-start .right-block {
   width: 350px;
-  top: 330px;
+  top: 490px;
+  right: -35px;
   text-align: center;
 }
 .main-container.quiz-start .right-block .startBtn {
@@ -499,7 +512,8 @@ main .bookmark:hover {
   display: inline-block;
   font-size: 29px;
   padding-left: 20px;
-  padding-top: 5px;
+  padding-top: 3px;
+  text-align: center;
 }
 .main-container.quiz-start .right-block .startBtn:hover {
   background: url(img/quiz/start-screen/start-btn.png) no-repeat left center;
