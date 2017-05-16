@@ -988,10 +988,10 @@ main .bookmark:hover {
   width: 285px;
   height: 42px;
   position: absolute;
-  bottom: -400px;
+  bottom: -390px;
   font-size: 22px;
   line-height: 23px;
-  left: 70px;
+  left: 62px;
   text-align: center;
 }
 .main-container.comments .activist-comment:hover {
@@ -999,9 +999,9 @@ main .bookmark:hover {
 }
 .main-container.comments .letters {
   position: absolute;
-  bottom: -400px;
+  bottom: -397px;
   font-size: 22px;
-  right: 80px;
+  right: 90px;
   line-height: 21px;
   width: 212px;
   height: 46px;
@@ -1016,13 +1016,17 @@ main .bookmark:hover {
   text-align: center;
   display: block;
   color: #000;
-  text-decoration: none;
   width: 215px;
   margin: 0 auto;
   padding-top: 2px;
+  position: absolute;
+  top: 250px;
+  left: 120px;
+  text-decoration: underline;
 }
 .popup-content .activ-comment:hover {
   background: url(img/elements/read-letters-hover.png) no-repeat;
+  text-decoration: none;
 }
 .main-container.feedback {
   width: 840px;
