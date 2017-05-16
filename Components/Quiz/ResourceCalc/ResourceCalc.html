@@ -5,13 +5,6 @@
         <a href="#!/sources" class="prev">
             <img src="source/img/elements/arrow-left.png">
         </a>
-
-        <a href
-           ng-href="{{$ctrl.getViolenceType() == undefined ? '' : '#!/strategies'}}"
-           class="next"
-           ng-class="{true: 'disabled'}[$ctrl.getViolenceType() == undefined]">
-            <img src="source/img/elements/arrow-right.png">
-        </a>
     </div>
 
     <div class="left-block">
@@ -29,9 +22,6 @@
     </div>
 
     <div class="right-block">
-        <!--<div class="help-btn type" ng-click="$ctrl.clickToOpenType()">-->
-            <!--<img src="source/img/elements/reference.png">-->
-        <!--</div>-->
         <div class="align">
             <div class="help-btn" ng-click="$ctrl.clickToOpenHomeViolenceHelp()">
                 <img src="source/img/elements/reference.png">

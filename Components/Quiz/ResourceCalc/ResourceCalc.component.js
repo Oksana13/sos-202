@@ -91,9 +91,14 @@
 
         // Violence types
 
+        $ctrl.moveToStrategies = function () {
+          window.location = '#!/strategies';
+        };
+
 
         $ctrl.setViolenceType = function (val) {
             SourcesService.setViolenceType(val) ;
+            $ctrl.moveToStrategies();
         };
 
         $ctrl.getViolenceType = function () {
