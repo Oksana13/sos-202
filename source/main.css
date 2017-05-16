@@ -255,6 +255,17 @@ main .bookmark:hover {
   border: none;
   box-shadow: 2px 4px 2px 0px;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
 .main-container.main-screen {
   background: url(img/bg-start-page.png);
 }
@@ -366,12 +377,7 @@ main .bookmark:hover {
 }
 .main-container.reminders .home-btn {
   top: 143px;
-  left: 4px;
-}
-.main-container.reminders .help-btn {
-  left: 395px;
-  top: 190px;
-  z-index: 100;
+  left: -50px;
 }
 .main-container.reminders .btn {
   width: 212px;
@@ -394,17 +400,18 @@ main .bookmark:hover {
   bottom: -17px;
 }
 .main-container.reminders .left-block {
-  width: 336px;
-  height: 400px;
+  width: 290px;
+  padding-right: 25px;
+  height: 458px;
   left: 100px;
+  top: 130px;
+  overflow: auto;
 }
 .main-container.reminders .right-block {
   width: 412px;
   height: 523px;
   top: 70px;
   right: 0;
-  background: url(img/memos/memo-open-bg.png);
-  padding-left: 33px;
   padding-top: 128px;
 }
 .main-container.reminders .right-block a {

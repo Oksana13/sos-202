@@ -35,7 +35,6 @@
                     'source/img/elements/reference-hover.png',
                     'source/img/elements/write-comment-hover.png',
                     'source/img/memos/bg-memo.png',
-                    'source/img/memos/memo-open-bg.png',
                     'source/img/memos/open-letter.png',
                     'source/img/quiz/choose/choosing-character-bg.png',
                     'source/img/quiz/choose/friend.png',

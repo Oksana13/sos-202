@@ -10,14 +10,14 @@
         .controller('reminders', reminders);
 
 
-    function reminders(ngDialog, SourcesService){
+    function reminders(ngDialog){
         let $ctrl = this;
 
-        $ctrl.clickToOpenHelp = function() {
-            ngDialog.open({
-                template: 'Data/Reminders/About.html'
-            });
-        };
+        // $ctrl.clickToOpenHelp = function() {
+        //     ngDialog.open({
+        //         template: 'Data/Reminders/About.html'
+        //     });
+        // };
 
         // types
 
