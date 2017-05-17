@@ -370,6 +370,7 @@ main .bookmark:hover {
   padding-right: 15px;
   word-wrap: break-word;
   font-size: 14px;
+  font-family: Cambria, Georgia, serif;
 }
 .main-container.contacts-screen .right-block .content a {
   display: block;
