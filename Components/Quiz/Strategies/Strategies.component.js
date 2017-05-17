@@ -28,6 +28,7 @@
         }
 
         if (type === undefined) {
+            SourcesService.setViolenceType('homeViolence', 'Домашнее насилие');
             type = 'homeViolence'
         }
 
@@ -38,28 +39,28 @@
         $ctrl.clickToOpenSurvival = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
+                template: 'Data/Templates-Violence-Type/Survival/tpl-' + character + '-' + type + '.html'
             });
         };
 
         $ctrl.clickToOpenCoping = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
+                template: 'Data/Templates-Violence-Type/Сoping/tpl-' + character + '-' + type + '.html'
             });
         };
 
         $ctrl.clickToOpenResistance = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
+                template: 'Data/Templates-Violence-Type/Resistance/tpl-' + character + '-' + type + '.html'
             });
         };
 
         $ctrl.clickToOpenMutualAid = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/tpl-' + character + '-' + type + '.html'
+                template: 'Data/Templates-Violence-Type/Mutualaid/tpl-' + character + '-' + type + '.html'
             });
         };
 
