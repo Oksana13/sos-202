@@ -46,7 +46,7 @@
         $ctrl.clickToOpenCoping = function() {
             ngDialog.open({
                 controller: 'Popup',
-                template: 'Data/Templates-Violence-Type/Сoping/tpl-' + character + '-' + type + '.html'
+                template: 'Data/Templates-Violence-Type/Coping/tpl-' + character + '-' + type + '.html'
             });
         };
 

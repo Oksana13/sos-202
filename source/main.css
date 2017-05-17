@@ -159,6 +159,9 @@ main .bookmark:hover {
   overflow-y: auto;
   padding-right: 20px;
 }
+.small-popup .ngdialog-close {
+  bottom: 15px;
+}
 .alert-dialog .ngdialog-content {
   background: none;
   width: auto;
